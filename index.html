@@ -3,463 +3,738 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>רינג הפקות</title>
-<meta name="description" content="רינג הפקות – הפקת הצעות נישואין מרגשות בכל הארץ. צילום ללא הגבלה, סרטון כניסה, שיר אישי ושמפניה בכל הפקה. בים, בטבע, במסעדה, בטיסה או ביאכטה.">
+<title>רינג הפקות | הפקת הצעות נישואין בכל הארץ</title>
+<meta name="description" content="רינג הפקות – הפקת הצעות נישואין מרגשות בכל הארץ. צילום ללא הגבלה, סרטון כניסה אישי, שיר לבחירתכם ושמפניה בכל הפקה. על הים, בטבע, במסעדה, בטיסה או ביאכטה.">
+<meta name="theme-color" content="#15111c">
+<meta property="og:type" content="website">
 <meta property="og:title" content="רינג הפקות – הצעות נישואין מרגשות">
 <meta property="og:description" content="כאן כדי ליצור עבורכם את הרגע המושלם. הפקת הצעות נישואין בכל הארץ.">
 <meta property="og:image" content="https://ringevents.co.il/wp-content/uploads/2024/11/IMG_5479-scaled-e1731613834929.jpg">
-<link rel="icon" type="image/png" href="logo.png">
+<link rel="icon" type="image/png" href="logo-light.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Assistant:wght@300;400;600;700&family=Pinyon+Script&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Assistant:wght@300;400;600;700;800&family=Pinyon+Script&display=swap" rel="stylesheet">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"LocalBusiness","name":"רינג הפקות","alternateName":"Ring Events","description":"הפקת הצעות נישואין בכל הארץ","telephone":"+972-58-578-1866","email":"RingEvents.il@gmail.com","address":{"@type":"PostalAddress","addressLocality":"טבריה","addressCountry":"IL"},"areaServed":"IL","url":"https://ringevents.co.il/","sameAs":["https://www.facebook.com/RingEvents.il","https://www.instagram.com/ring_events_","https://www.youtube.com/channel/UC25QVVGlGbdLrEeHdpeA7HQ"]}
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"רינג הפקות","alternateName":"Ring Events","description":"הפקת הצעות נישואין בכל הארץ","telephone":"+972-58-578-1866","email":"RingEvents.il@gmail.com","address":{"@type":"PostalAddress","addressLocality":"טבריה","addressCountry":"IL"},"areaServed":"IL","url":"https://ringevents.co.il/","image":"https://ringevents.co.il/wp-content/uploads/2024/11/IMG_5479-scaled-e1731613834929.jpg","sameAs":["https://www.facebook.com/RingEvents.il","https://www.instagram.com/ring_events_","https://www.youtube.com/channel/UC25QVVGlGbdLrEeHdpeA7HQ"]}
 </script>
 <style>
 :root{
-  /* כיוון: ערב שקיעה – רקע לילה עמוק, זהב שמפניה וורוד פרחים. פריסה: גושי מסך רחבים, טיפוגרפיה גדולה, גלריה פסיפסית */
+  /* כיוון: ערב שקיעה – לילה עמוק, זהב שמפניה, ורוד פרחים. פריסה: מסכים רחבים, קשתות כמו טבעת, תנועה עדינה */
   --night:#15111c;
-  --night-2:#1e1828;
+  --night-2:#1d1726;
+  --night-3:#261e31;
   --ink:#f6efe6;
   --muted:#b9adb8;
   --gold:#d9b779;
-  --gold-lit:#d9b779;
+  --gold-2:#f0d9a8;
   --blush:#e7a6b1;
   --line:rgba(217,183,121,.22);
-  --black:#15111c;
-  --cream:#f6efe6;
   --display:"Bellefair","Frank Ruhl Libre",Georgia,serif;
   --body:"Assistant","Heebo",Arial,sans-serif;
   --script:"Pinyon Script",cursive;
+  --bar-h:0px;
   color-scheme:dark;
 }
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
-body{background:var(--night);color:var(--ink);font-family:var(--body);font-size:18px;line-height:1.7}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{background:var(--night);color:var(--ink);font-family:var(--body);font-size:18px;line-height:1.7;padding-bottom:var(--bar-h);overflow-x:hidden}
 img{max-width:100%;display:block}
 a{color:inherit}
+button{font:inherit;color:inherit}
 :focus-visible{outline:2px solid var(--gold);outline-offset:3px}
-h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.15;text-wrap:balance}
-.wrap{width:min(1180px,100% - 40px);margin-inline:auto}
-.eyebrow{color:var(--gold);letter-spacing:.12em;font-size:.85rem;font-weight:600}
-.btn{display:inline-flex;align-items:center;gap:.5em;padding:.85em 1.6em;border-radius:999px;font-weight:700;text-decoration:none;border:1px solid var(--gold);transition:background .2s,color .2s;font-family:var(--body);font-size:1rem;cursor:pointer}
-.btn-gold{background:var(--gold);color:var(--night)}
-.btn-gold:hover{background:var(--ink);border-color:var(--ink)}
-.btn-ghost{background:transparent;color:var(--ink)}
-.btn-ghost:hover{background:rgba(156,122,69,.12)}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.12;text-wrap:balance}
+.wrap{width:min(1200px,100% - 40px);margin-inline:auto}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;color:var(--gold);letter-spacing:.14em;font-size:.82rem;font-weight:700}
+.eyebrow::before{content:"";width:28px;height:1px;background:var(--gold)}
+.gold-text{background:linear-gradient(100deg,var(--gold) 10%,var(--gold-2) 45%,var(--gold) 80%);-webkit-background-clip:text;background-clip:text;color:transparent}
 
-/* photo frame with graceful fallback */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55em;padding:.9em 1.7em;border-radius:999px;font-weight:700;text-decoration:none;border:1px solid var(--gold);transition:transform .2s,background .2s,color .2s,box-shadow .2s;font-size:1rem;cursor:pointer;white-space:nowrap}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-gold{background:linear-gradient(135deg,var(--gold),var(--gold-2));color:#1a1420;border-color:transparent;box-shadow:0 10px 30px -10px rgba(217,183,121,.6)}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 14px 34px -10px rgba(217,183,121,.8)}
+.btn-ghost{background:transparent;color:var(--ink)}
+.btn-ghost:hover{background:rgba(217,183,121,.12)}
+.btn-wa{background:#25d366;border-color:#25d366;color:#fff}
+.btn-wa:hover{transform:translateY(-2px)}
+
 .ph{position:relative;overflow:hidden;background:
-  radial-gradient(120% 90% at 20% 10%,rgba(231,166,177,.45),transparent 60%),
-  radial-gradient(90% 80% at 85% 90%,rgba(217,183,121,.4),transparent 60%),
+  radial-gradient(120% 90% at 20% 10%,rgba(231,166,177,.4),transparent 60%),
+  radial-gradient(90% 80% at 85% 90%,rgba(217,183,121,.35),transparent 60%),
   linear-gradient(160deg,#2a2033,#17121f)}
-.ph img{width:100%;height:100%;object-fit:cover}
+.ph img{width:100%;height:100%;object-fit:cover;transition:transform .8s ease}
+
+.rv{transition:opacity .9s ease,transform .9s ease}
+.js .rv.pre{opacity:0;transform:translateY(24px)}
 
 /* header */
-header{position:sticky;top:0;z-index:20;background:rgba(21,17,28,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px 0}
-.logo{display:flex;align-items:center;text-decoration:none}
-.logo img{height:58px;width:auto}
-.nav ul{display:flex;gap:26px;list-style:none}
-.nav ul a{text-decoration:none;color:var(--muted);font-weight:600}
-.nav ul a:hover{color:var(--ink)}
-@media (max-width:880px){.nav ul{display:none}}
+header{position:fixed;inset-inline:0;top:0;z-index:40;transition:background .3s,border-color .3s;border-bottom:1px solid transparent}
+header.solid{background:rgba(21,17,28,.9);backdrop-filter:blur(12px);border-color:var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:12px 0}
+.logo img{height:62px;width:auto}
+.nav ul{display:flex;gap:28px;list-style:none}
+.nav ul a{text-decoration:none;color:var(--ink);opacity:.8;font-weight:600;font-size:.98rem;position:relative}
+.nav ul a::after{content:"";position:absolute;inset-inline:0;bottom:-4px;height:1px;background:var(--gold);transform:scaleX(0);transition:transform .25s}
+.nav ul a:hover{opacity:1}
+.nav ul a:hover::after{transform:scaleX(1)}
+.nav .btn{padding:.65em 1.3em}
+@media (max-width:960px){.nav ul{display:none}.logo img{height:52px}}
 
 /* hero */
-.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;padding:72px 0 64px}
-.hero h1{font-size:clamp(2.6rem,5.6vw,4.6rem)}
-.hero h1 em{font-style:normal;color:var(--gold)}
-.hero p.lead{color:var(--muted);font-size:1.2rem;max-width:34ch;margin:22px 0 30px}
+.hero{position:relative;padding:130px 0 70px;isolation:isolate}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:
+  radial-gradient(60% 60% at 80% 20%,rgba(231,166,177,.14),transparent 70%),
+  radial-gradient(50% 50% at 15% 80%,rgba(217,183,121,.12),transparent 70%)}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:center}
+.hero h1{font-size:clamp(2.7rem,6vw,5.2rem);margin:18px 0 0}
+.hero h1 .gold-text{display:inline-block}
+.hero .lead{color:var(--muted);font-size:1.22rem;max-width:36ch;margin:24px 0 34px}
 .hero .ctas{display:flex;flex-wrap:wrap;gap:14px}
-.hero .ph{aspect-ratio:4/5;border-radius:220px 220px 18px 18px;border:1px solid var(--line)}
-.hero .stamp{position:absolute;bottom:22px;inset-inline-start:22px;background:rgba(21,17,28,.8);border:1px solid var(--line);border-radius:14px;padding:12px 18px}
-.hero .stamp span{font-family:var(--script);font-size:2rem;color:var(--gold-lit);line-height:1}
-.hero .stamp small{display:block;color:#d8cdbf;font-size:.85rem}
-@media (max-width:880px){.hero{grid-template-columns:1fr;padding-top:40px}.hero .ph{order:-1;aspect-ratio:1/1;border-radius:160px 160px 18px 18px}}
+.ticks{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:34px;list-style:none;color:var(--muted);font-size:.98rem}
+.ticks li{display:flex;align-items:center;gap:8px}
+.ticks li::before{content:"";width:7px;height:7px;transform:rotate(45deg);background:var(--gold)}
+.arch{position:relative}
+.arch .ph{aspect-ratio:4/5;border-radius:999px 999px 22px 22px;border:1px solid var(--line)}
+.arch::before{content:"";position:absolute;inset:-14px;border:1px solid var(--line);border-radius:999px 999px 30px 30px;pointer-events:none}
+.stamp{position:absolute;bottom:26px;inset-inline-end:-24px;background:rgba(21,17,28,.86);backdrop-filter:blur(6px);border:1px solid var(--line);border-radius:16px;padding:14px 20px;box-shadow:0 20px 40px -20px #000}
+.stamp span{font-family:var(--script);font-size:2.2rem;color:var(--gold);line-height:1;display:block}
+.stamp small{color:var(--muted);font-size:.85rem}
+@media (max-width:900px){.hero{padding-top:100px}.hero-grid{grid-template-columns:1fr;gap:40px}.arch{order:-1;max-width:420px;margin-inline:auto;width:100%}.arch .ph{aspect-ratio:1/1.05}.stamp{inset-inline-end:8px}}
 
-/* facts strip */
-.facts{border-block:1px solid var(--line);background:var(--night-2)}
-.facts ul{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding:26px 0;text-align:center}
-.facts strong{display:block;font-family:var(--display);font-size:1.5rem;color:var(--gold);font-weight:400}
-.facts span{color:var(--muted);font-size:.95rem}
-@media (max-width:700px){.facts ul{grid-template-columns:repeat(2,1fr)}}
+/* marquee */
+.marquee{border-block:1px solid var(--line);background:var(--night-2);overflow:hidden;padding:18px 0}
+.marquee-track{display:flex;gap:46px;width:max-content;animation:mq 40s linear infinite}
+.marquee span{font-family:var(--display);font-size:1.5rem;color:var(--ink);opacity:.85;display:flex;align-items:center;gap:46px;white-space:nowrap}
+.marquee span::after{content:"";width:6px;height:6px;transform:rotate(45deg);background:var(--gold)}
+@keyframes mq{to{transform:translateX(50%)}}
 
-section{padding:96px 0}
-.head{display:flex;flex-direction:column;gap:10px;margin-bottom:48px;max-width:640px}
-.head h2{font-size:clamp(2rem,4vw,3rem)}
-.head p{color:var(--muted)}
+section{padding:110px 0}
+.head{display:flex;flex-direction:column;gap:12px;margin-bottom:52px;max-width:680px}
+.head.center{margin-inline:auto;text-align:center;align-items:center}
+.head h2{font-size:clamp(2.1rem,4.4vw,3.4rem)}
+.head p{color:var(--muted);font-size:1.1rem}
+.alt{background:var(--night-2)}
 
 /* included */
-.incl{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--line)}
-.incl div{padding:30px 24px 10px;border-inline-start:1px solid var(--line)}
-.incl div:first-child{border-inline-start:0;padding-inline-start:0}
-.incl .n{font-family:var(--display);color:var(--blush);font-size:1rem}
-.incl h3{font-size:1.5rem;margin:8px 0}
+.incl{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.incl article{position:relative;padding:34px 26px 30px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(180deg,rgba(217,183,121,.06),transparent 60%);transition:transform .3s,border-color .3s}
+.incl article:hover{transform:translateY(-6px);border-color:rgba(217,183,121,.5)}
+.incl .ic{width:54px;height:54px;border-radius:50%;border:1px solid var(--gold);display:grid;place-items:center;margin-bottom:22px}
+.incl .ic svg{width:24px;height:24px;stroke:var(--gold);fill:none;stroke-width:1.5}
+.incl h3{font-size:1.6rem;margin-bottom:8px}
 .incl p{color:var(--muted);font-size:1rem}
-@media (max-width:880px){.incl{grid-template-columns:1fr 1fr}.incl div{border-inline-start:0;border-bottom:1px solid var(--line);padding-inline:0 16px}}
-@media (max-width:480px){.incl{grid-template-columns:1fr}}
+@media (max-width:960px){.incl{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.incl{grid-template-columns:1fr}}
 
-/* styles */
-.styles{background:var(--night-2)}
-.dark{background:var(--night)}
-.style-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
-.style-card{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--night)}
-.style-card .ph{aspect-ratio:3/4}
-.style-card h3{font-size:1.2rem;padding:14px 16px}
-@media (max-width:980px){.style-grid{grid-template-columns:repeat(3,1fr)}}
-@media (max-width:560px){.style-grid{grid-template-columns:repeat(2,1fr)}}
+/* styles gallery */
+.style-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.style-card{all:unset;cursor:zoom-in;display:block;position:relative;border-radius:18px;overflow:hidden;aspect-ratio:3/4}
+.style-card .ph{position:absolute;inset:0}
+.style-card:hover img{transform:scale(1.06)}
+.style-card .cap{position:absolute;inset-inline:0;bottom:0;padding:40px 16px 16px;background:linear-gradient(0deg,rgba(15,11,20,.92),transparent);font-family:var(--display);font-size:1.25rem}
+.style-card:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+@media (max-width:1000px){.style-grid{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:600px){.style-grid{grid-template-columns:repeat(2,1fr);gap:10px}}
 
-/* where */
-.split{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
-.places{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.places li{list-style:none;border:1px solid var(--line);border-radius:14px;padding:18px 20px;display:flex;justify-content:space-between;align-items:center}
-.places li b{font-family:var(--display);font-weight:400;font-size:1.35rem}
-.places li small{color:var(--muted)}
-.modes{display:flex;flex-direction:column;gap:18px}
-.mode{padding:24px;border-radius:16px;background:var(--night-2);border-inline-start:3px solid var(--blush)}
-.mode h3{font-size:1.5rem;margin-bottom:6px}
-.mode p{color:var(--muted)}
-@media (max-width:880px){.split{grid-template-columns:1fr}}
+/* builder */
+.builder{display:grid;grid-template-columns:1.25fr .75fr;gap:28px;align-items:start}
+.b-steps{display:flex;flex-direction:column;gap:30px}
+.b-step h3{font-size:1.45rem;display:flex;align-items:baseline;gap:12px;margin-bottom:14px}
+.b-step h3 small{font-family:var(--body);font-size:.85rem;color:var(--gold);font-weight:700;letter-spacing:.08em}
+.b-step h3 em{font-family:var(--body);font-style:normal;font-size:1rem;color:var(--muted)}
+.opts{display:flex;flex-wrap:wrap;gap:10px}
+.opt{cursor:pointer;border:1px solid var(--line);background:var(--night);border-radius:999px;padding:.55em 1.15em;font-size:1rem;transition:all .2s}
+.opt:hover{border-color:var(--gold)}
+.opt[aria-pressed="true"]{background:var(--gold);color:#1a1420;border-color:var(--gold);font-weight:700}
+.opt.script{font-family:var(--script);font-size:1.3rem;padding:.3em 1.15em}
+.summary{position:sticky;top:100px;border:1px solid var(--gold);border-radius:24px;padding:30px;background:radial-gradient(120% 80% at 100% 0%,rgba(231,166,177,.14),transparent 60%),var(--night);box-shadow:0 30px 60px -30px #000}
+.summary .script{font-family:var(--script);color:var(--gold);font-size:2.3rem;line-height:1}
+.summary h3{font-size:1.7rem;margin:6px 0 18px}
+.summary dl{display:grid;grid-template-columns:auto 1fr;gap:10px 16px;margin-bottom:22px}
+.summary dt{color:var(--muted);font-size:.95rem}
+.summary dd{font-weight:600}
+.summary dd.empty{color:var(--muted);font-weight:400;opacity:.7}
+.summary .meter{height:4px;border-radius:4px;background:var(--night-3);overflow:hidden;margin-bottom:22px}
+.summary .meter i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--gold),var(--blush));transition:width .4s}
+.summary .btn{width:100%}
+@media (max-width:900px){.builder{grid-template-columns:1fr}.summary{position:static}}
 
-/* upgrades */
-.chips{display:flex;flex-wrap:wrap;gap:10px}
-.chips span{border:1px solid var(--line);border-radius:999px;padding:.5em 1.1em;color:var(--ink);font-size:1rem}
-.chips span.marry{font-family:var(--script);color:var(--gold);font-size:1.3rem;padding:.25em 1.1em}
-
-/* steps */
-.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;counter-reset:s}
-.steps li{list-style:none;counter-increment:s}
-.steps li::before{content:counter(s);display:grid;place-items:center;width:52px;height:52px;border-radius:50%;border:1px solid var(--gold);color:var(--gold);font-family:var(--display);font-size:1.4rem;margin-bottom:16px}
-.steps h3{font-size:1.35rem;margin-bottom:6px}
+/* process */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;counter-reset:s;position:relative}
+.steps::before{content:"";position:absolute;top:27px;inset-inline:8%;height:1px;background:var(--line)}
+.steps li{list-style:none;counter-increment:s;position:relative}
+.steps li::before{content:counter(s);display:grid;place-items:center;width:56px;height:56px;border-radius:50%;border:1px solid var(--gold);background:var(--night-2);color:var(--gold);font-family:var(--display);font-size:1.5rem;margin-bottom:18px;position:relative}
+.steps h3{font-size:1.4rem;margin-bottom:6px}
 .steps p{color:var(--muted);font-size:1rem}
-@media (max-width:880px){.steps{grid-template-columns:1fr 1fr}}
+@media (max-width:900px){.steps{grid-template-columns:1fr 1fr}.steps::before{display:none}}
 @media (max-width:480px){.steps{grid-template-columns:1fr}}
 
-/* couples mosaic */
-.mosaic{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:220px;gap:12px}
-.mosaic .ph{border-radius:14px}
+/* reels */
+.reels-head{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:36px}
+.reels-head .head{margin-bottom:0}
+.arrows{display:flex;gap:10px}
+.arrows button{width:50px;height:50px;border-radius:50%;border:1px solid var(--gold);background:transparent;cursor:pointer;display:grid;place-items:center}
+.arrows button:hover{background:rgba(217,183,121,.15)}
+.arrows svg{width:20px;height:20px;stroke:var(--gold);fill:none;stroke-width:2}
+.reels{display:grid;grid-auto-flow:column;grid-auto-columns:clamp(220px,24vw,290px);gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:14px;scrollbar-width:thin;scrollbar-color:var(--gold) transparent}
+.reel{position:relative;aspect-ratio:9/16;border-radius:20px;overflow:hidden;scroll-snap-align:start;border:1px solid var(--line)}
+.reel button{all:unset;cursor:pointer;position:absolute;inset:0;display:grid;place-items:center}
+.reel button:focus-visible{outline:2px solid var(--gold);outline-offset:-4px}
+.reel img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:scale(1.35)}
+.reel button::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(15,11,20,.7),transparent 45%)}
+.reel .play{position:relative;z-index:1;width:66px;height:66px;border-radius:50%;background:rgba(21,17,28,.6);backdrop-filter:blur(4px);border:1px solid var(--gold);display:grid;place-items:center;transition:transform .2s}
+.reel button:hover .play{transform:scale(1.1)}
+.reel .play::before{content:"";border-style:solid;border-width:12px 0 12px 20px;border-color:transparent transparent transparent var(--ink);margin-inline-end:-5px}
+.reel .tag{position:absolute;z-index:1;bottom:14px;inset-inline-start:16px;font-family:var(--display);font-size:1.1rem}
+.reel iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+
+/* couples */
+.mosaic{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:230px;gap:14px}
+.mosaic button{all:unset;cursor:zoom-in;display:block;border-radius:16px;overflow:hidden;position:relative}
+.mosaic button .ph{position:absolute;inset:0}
+.mosaic button:hover img{transform:scale(1.06)}
+.mosaic button:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
 .mosaic .tall{grid-row:span 2}
 .mosaic .wide{grid-column:span 2}
-@media (max-width:760px){.mosaic{grid-template-columns:1fr 1fr;grid-auto-rows:170px}}
-.more{margin-top:28px;display:flex;gap:14px;flex-wrap:wrap}
+@media (max-width:760px){.mosaic{grid-template-columns:1fr 1fr;grid-auto-rows:170px;gap:10px}}
 
-/* videos */
-.vids{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.vid{position:relative;aspect-ratio:16/9;border-radius:14px;overflow:hidden;border:1px solid var(--line)}
-.vid button{all:unset;cursor:pointer;position:absolute;inset:0;display:grid;place-items:center}
-.vid button:focus-visible{outline:2px solid var(--gold);outline-offset:-4px}
-.vid img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.vid .play{position:relative;width:64px;height:64px;border-radius:50%;background:rgba(22,22,26,.75);border:1px solid #c9a46a;display:grid;place-items:center;transition:transform .2s}
-.vid button:hover .play{transform:scale(1.08)}
-.vid .play::before{content:"";border-style:solid;border-width:11px 0 11px 18px;border-color:transparent transparent transparent #f5ece3;margin-inline-end:-4px}
-.vid iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
-.vid .yt{position:absolute;bottom:10px;inset-inline-end:12px;font-size:.8rem;color:#f5ece3;background:rgba(22,22,26,.7);padding:2px 10px;border-radius:999px;text-decoration:none}
-.vids .extra{display:none}
-.vids.open .extra{display:block}
-@media (max-width:880px){.vids{grid-template-columns:1fr 1fr}}
-@media (max-width:520px){.vids{grid-template-columns:1fr}}
+/* cta band */
+.band{position:relative;border-radius:32px;overflow:hidden;padding:70px 40px;text-align:center;border:1px solid var(--line);background:radial-gradient(70% 120% at 50% 0%,rgba(231,166,177,.2),transparent 70%),radial-gradient(60% 100% at 50% 100%,rgba(217,183,121,.2),transparent 70%),var(--night-2)}
+.band .script{font-family:var(--script);font-size:clamp(3rem,7vw,5rem);color:var(--gold);line-height:1}
+.band h2{font-size:clamp(2rem,4vw,3rem);margin:10px 0 14px}
+.band p{color:var(--muted);max-width:50ch;margin:0 auto 30px}
+.band .ctas{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+@media (max-width:520px){.band{padding:50px 22px}}
 
 /* contact */
-.contact{background:linear-gradient(180deg,var(--night-2),var(--night))}
-.contact .split{align-items:stretch}
-.lines{display:flex;flex-direction:column;gap:14px;margin-top:26px}
-.lines a,.lines div{display:flex;justify-content:space-between;gap:16px;padding:16px 0;border-bottom:1px solid var(--line);text-decoration:none}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.lines{display:flex;flex-direction:column;margin-top:8px}
+.lines a,.lines div{display:flex;justify-content:space-between;gap:16px;padding:18px 0;border-bottom:1px solid var(--line);text-decoration:none}
 .lines small{color:var(--muted)}
 .lines b{font-weight:600;direction:ltr;unicode-bidi:isolate}
-form{background:var(--night);border:1px solid var(--line);border-radius:20px;padding:30px;display:flex;flex-direction:column;gap:16px}
-form h3{font-size:1.7rem}
-label{display:flex;flex-direction:column;gap:6px;font-weight:600;font-size:.95rem}
-input,select,textarea{font:inherit;font-weight:400;background:var(--night-2);color:var(--ink);border:1px solid var(--line);border-radius:10px;padding:.7em .9em}
-textarea{min-height:90px;resize:vertical}
-.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-@media (max-width:480px){.row2{grid-template-columns:1fr}}
-.form-out{display:none;border:1px solid var(--gold);border-radius:12px;padding:16px;background:rgba(201,164,106,.1)}
-.form-out.show{display:block}
-.form-out p{margin-bottom:10px}
+.socials{display:flex;gap:12px;margin-top:26px}
+.socials a{width:46px;height:46px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center}
+.socials a:hover{border-color:var(--gold)}
+.socials svg{width:20px;height:20px;fill:var(--ink)}
+@media (max-width:900px){.contact-grid{grid-template-columns:1fr}}
 
-footer{background:var(--night);border-top:1px solid var(--line);padding:48px 0 100px;color:#b3a99c;font-size:.95rem}
-.foot img{height:96px;width:auto;margin-bottom:12px}
-.foot a:hover{color:#f5ece3!important}
-.foot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px}
-.foot nav{display:flex;gap:18px;flex-wrap:wrap}
+/* forms */
+.lead-form{background:var(--night);border:1px solid var(--line);border-radius:24px;padding:32px}
+.fields{display:flex;flex-direction:column;gap:16px}
+.lead-form h3{font-size:1.8rem}
+.lead-form .sub{color:var(--muted);font-size:1rem;margin-top:-8px}
+label{display:flex;flex-direction:column;gap:6px;font-weight:600;font-size:.95rem}
+input,select{font:inherit;font-weight:400;background:var(--night-2);color:var(--ink);border:1px solid var(--line);border-radius:12px;padding:.8em 1em;width:100%}
+input:focus,select:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(217,183,121,.18)}
+[aria-invalid="true"]{border-color:var(--blush)!important}
+.err{color:var(--blush);font-size:.88rem;min-height:1.2em;font-weight:400}
+.err:empty{min-height:0}
+.lead-form .btn{width:100%;margin-top:4px}
+.privacy{font-size:.82rem;color:var(--muted);text-align:center}
+.done{display:none;text-align:center;padding:10px 0}
+.done .script{font-family:var(--script);font-size:2.6rem;color:var(--gold);line-height:1.1}
+.done p{color:var(--muted);margin:8px 0 16px}
+.lead-form.sent .fields{display:none}
+.lead-form.sent .done{display:block}
+
+/* footer */
+footer{border-top:1px solid var(--line);padding:56px 0 40px;color:var(--muted);font-size:.95rem}
+.foot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:24px}
+.foot img{height:90px;width:auto}
+.foot nav{display:flex;gap:20px;flex-wrap:wrap}
 .foot a{text-decoration:none}
 .foot a:hover{color:var(--ink)}
 
-.wa{position:fixed;bottom:20px;inset-inline-start:20px;z-index:30;width:60px;height:60px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.35)}
-.wa svg{width:32px;height:32px;fill:#fff}
+/* sticky action bar */
+.actionbar{position:fixed;z-index:45;bottom:16px;left:50%;transform:translateX(-50%);display:flex;gap:6px;padding:6px;border-radius:999px;background:rgba(29,23,38,.92);backdrop-filter:blur(12px);border:1px solid var(--line);box-shadow:0 20px 50px -15px rgba(0,0,0,.8)}
+.actionbar a,.actionbar button{display:flex;align-items:center;gap:8px;padding:.75em 1.3em;border-radius:999px;font-weight:700;font-size:.98rem;text-decoration:none;border:0;cursor:pointer;background:transparent;white-space:nowrap}
+.actionbar svg{width:20px;height:20px;flex:none}
+.actionbar .wa{background:#25d366;color:#fff}
+.actionbar .wa svg{fill:#fff}
+.actionbar .call svg{fill:none;stroke:var(--gold);stroke-width:1.8}
+.actionbar .call:hover{background:rgba(217,183,121,.12)}
+.actionbar .lead{background:linear-gradient(135deg,var(--gold),var(--gold-2));color:#1a1420}
+.actionbar .lead svg{fill:none;stroke:#1a1420;stroke-width:1.8}
+@media (max-width:640px){
+  .actionbar{left:0;right:0;bottom:0;transform:none;border-radius:20px 20px 0 0;padding:8px 8px calc(8px + env(safe-area-inset-bottom));gap:6px}
+  .actionbar a,.actionbar button{flex:1;flex-direction:column;justify-content:center;gap:3px;padding:.55em .3em;font-size:.82rem;border-radius:14px}
+  :root{--bar-h:78px}
+}
+
+/* modals */
+.modal{position:fixed;inset:0;z-index:60;display:none;align-items:center;justify-content:center;padding:20px;background:rgba(8,6,12,.78);backdrop-filter:blur(6px)}
+.modal.open{display:flex;animation:fade .3s ease}
+@keyframes fade{from{opacity:0}}
+.modal-card{position:relative;width:min(460px,100%);max-height:calc(100% - 20px);overflow:auto;border-radius:26px;border:1px solid var(--gold);background:var(--night-2)}
+.modal-card .lead-form{border:0;background:transparent;padding-top:26px}
+.x{position:absolute;top:12px;inset-inline-start:12px;z-index:2;width:40px;height:40px;border-radius:50%;border:1px solid var(--line);background:rgba(21,17,28,.7);cursor:pointer;display:grid;place-items:center;font-size:1.4rem;line-height:1}
+.x:hover{border-color:var(--gold)}
+.offer-top{position:relative;padding:38px 30px 0;text-align:center;background:radial-gradient(100% 120% at 50% 0%,rgba(231,166,177,.25),transparent 70%)}
+.offer-top .script{font-family:var(--script);color:var(--gold);font-size:2.4rem;line-height:1}
+.offer-top h3{font-size:1.65rem;margin-top:6px}
+.price{display:flex;flex-direction:column;align-items:center;margin:14px 0 4px}
+.price small{color:var(--muted);font-size:1rem}
+.price b{font-family:var(--display);font-weight:400;font-size:3.6rem;line-height:1.05}
+.offer-top .note{color:var(--muted);font-size:.95rem}
+.offer-incl{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 14px;list-style:none;margin:14px 0 0;font-size:.9rem;color:var(--ink)}
+.offer-incl li::before{content:"✓ ";color:var(--gold)}
+
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:70;display:none;align-items:center;justify-content:center;background:rgba(8,6,12,.94)}
+.lb.open{display:flex}
+.lb img{max-width:min(92vw,1100px);max-height:84vh;border-radius:14px;object-fit:contain}
+.lb .x{top:20px;inset-inline-start:20px}
+.lb .nav-b{position:absolute;top:50%;transform:translateY(-50%);width:54px;height:54px;border-radius:50%;border:1px solid var(--gold);background:rgba(21,17,28,.6);cursor:pointer;display:grid;place-items:center}
+.lb .nav-b svg{width:22px;height:22px;stroke:var(--gold);fill:none;stroke-width:2}
+.lb .prev{right:20px}.lb .next{left:20px}
+.lb .count{position:absolute;bottom:22px;left:50%;transform:translateX(-50%);color:var(--muted);font-size:.9rem;direction:ltr}
+
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.js .rv.pre{opacity:1;transform:none}}
 </style>
 </head>
 <body>
+<script>document.body.classList.add('js')</script>
 
-<header>
+<header id="hdr">
   <div class="wrap nav">
-    <a class="logo" href="#top" aria-label="רינג הפקות – דף הבית"><img src="logo-light.png" alt="Ring Events – רינג הפקות" width="66" height="58"></a>
+    <a class="logo" href="#top" aria-label="רינג הפקות – לראש העמוד"><img src="logo-light.png" alt="Ring Events – רינג הפקות" width="71" height="62"></a>
     <ul>
       <li><a href="#included">מה כלול</a></li>
       <li><a href="#styles">סגנונות</a></li>
-      <li><a href="#where">איפה</a></li>
-      <li><a href="#process">איך זה עובד</a></li>
-      <li><a href="#couples">הזוגות שלנו</a></li>
+      <li><a href="#builder">בנו הצעה</a></li>
       <li><a href="#videos">וידאו</a></li>
+      <li><a href="#couples">הזוגות שלנו</a></li>
+      <li><a href="#contact">צרו קשר</a></li>
     </ul>
-    <a class="btn btn-gold" href="tel:0585781866">058-578-1866</a>
+    <a class="btn btn-gold" href="tel:0585781866" data-track="call">058-578-1866</a>
   </div>
 </header>
 
 <main id="top">
-  <div class="wrap hero">
-    <div>
-      <p class="eyebrow">הפקת הצעות נישואין · בכל הארץ</p>
-      <h1>כאן כדי ליצור עבורכם את <em>הרגע המושלם</em></h1>
-      <p class="lead">אתם מביאים את הטבעת. אנחנו דואגים לכל השאר: עיצוב, צילום, מוזיקה ושמפניה, בדיוק ברגע שהיא אומרת כן.</p>
-      <div class="ctas">
-        <a class="btn btn-gold" href="https://wa.me/972585781866?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%A4%D7%A8%D7%98%D7%99%D7%9D%20%D7%A2%D7%9C%20%D7%94%D7%A4%D7%A7%D7%AA%20%D7%94%D7%A6%D7%A2%D7%AA%20%D7%A0%D7%99%D7%A9%D7%95%D7%90%D7%99%D7%9F">דברו איתנו בוואטסאפ</a>
-        <a class="btn btn-ghost" href="#styles">לראות סגנונות</a>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="rv">
+        <p class="eyebrow">הפקת הצעות נישואין · בכל הארץ</p>
+        <h1>כאן כדי ליצור עבורכם <span class="gold-text">את הרגע המושלם</span></h1>
+        <p class="lead">אתם מביאים את הטבעת. אנחנו דואגים לכל השאר: עיצוב, צילום, מוזיקה ושמפניה, בדיוק ברגע שהיא אומרת כן.</p>
+        <div class="ctas">
+          <button class="btn btn-gold" type="button" data-open="leadModal">קבלו הצעה מותאמת</button>
+          <a class="btn btn-ghost" href="#builder">בנו את ההצעה שלכם</a>
+        </div>
+        <ul class="ticks">
+          <li>צילום ללא הגבלה</li>
+          <li>סרטון כניסה אישי</li>
+          <li>תיאום בסוד מוחלט</li>
+        </ul>
+      </div>
+      <div class="arch rv">
+        <div class="ph"><img src="https://ringevents.co.il/wp-content/uploads/2024/11/IMG_5479-scaled-e1731613834929-1024x709.jpg" alt="הצעת נישואין על חוף הים בהפקת רינג הפקות" fetchpriority="high" onerror="this.remove()"></div>
+        <div class="stamp"><span>Marry Me?</span><small>הרגע שתזכרו כל החיים</small></div>
       </div>
     </div>
-    <div class="ph">
-      <img src="https://ringevents.co.il/wp-content/uploads/2024/11/IMG_5479-scaled-e1731613834929-1024x709.jpg" alt="הצעת נישואין בהפקת רינג הפקות" onerror="this.remove()">
-      <div class="stamp"><span>Marry Me?</span><small>הרגע שתזכרו כל החיים</small></div>
-    </div>
-  </div>
+  </section>
 
-  <div class="facts">
-    <ul class="wrap">
-      <li><strong>בכל הארץ</strong><span>מהצפון ועד הדרום, מבסיס בטבריה</span></li>
-      <li><strong>ללא הגבלה</strong><span>תמונות מקצועיות מכל הרגע</span></li>
-      <li><strong>סרטון אישי</strong><span>מההליכה בשביל ועד הטבעת על האצבע</span></li>
-      <li><strong>בסוד מוחלט</strong><span>תיאום מלא כדי שהיא לא תחשוד</span></li>
-    </ul>
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>פרחים ונרות</span><span>כיתוב מואר</span><span>לב מפרחים</span><span>טבעת פרחים</span><span>אוהל טיפי בוהו</span><span>MARRY ME</span><span>חופת פרחים</span><span>שקיעה על הים</span><span>יאכטה פרטית</span><span>זיקוקים</span>
+      <span>פרחים ונרות</span><span>כיתוב מואר</span><span>לב מפרחים</span><span>טבעת פרחים</span><span>אוהל טיפי בוהו</span><span>MARRY ME</span><span>חופת פרחים</span><span>שקיעה על הים</span><span>יאכטה פרטית</span><span>זיקוקים</span>
+    </div>
   </div>
 
   <section id="included">
     <div class="wrap">
-      <div class="head">
+      <div class="head center rv">
         <p class="eyebrow">בכל הפקה</p>
         <h2>מה מקבלים בכל הצעה</h2>
         <p>ארבעה דברים שמגיעים עם כל הפקה, בכל סגנון ובכל מיקום.</p>
       </div>
       <div class="incl">
-        <div><span class="n">01</span><h3>צילום ללא הגבלה</h3><p>צלם מקצועי שתופס כל מבט, כל דמעה וכל חיבוק.</p></div>
-        <div><span class="n">02</span><h3>סרטון כניסה</h3><p>סרטון ערוך של כל הרגע, מהכניסה לשביל ועד שהטבעת עולה על האצבע.</p></div>
-        <div><span class="n">03</span><h3>שיר כניסה אישי</h3><p>השיר שלכם מתנגן בדיוק כשהיא מגיעה. לא בטוחים איזה? נעזור לבחור.</p></div>
-        <div><span class="n">04</span><h3>שמפניה וכוסות</h3><p>בקבוק שמפניה וכוסות מהודרות להרמת הכוסית הראשונה כמאורסים.</p></div>
+        <article class="rv"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg></div><h3>צילום ללא הגבלה</h3><p>צלם מקצועי שתופס כל מבט, כל דמעה וכל חיבוק.</p></article>
+        <article class="rv"><div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="M16 10l5-3v10l-5-3"/></svg></div><h3>סרטון כניסה</h3><p>סרטון ערוך של כל הרגע, מהכניסה לשביל ועד שהטבעת עולה על האצבע.</p></article>
+        <article class="rv"><div class="ic"><svg viewBox="0 0 24 24"><path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/></svg></div><h3>שיר כניסה אישי</h3><p>השיר שלכם מתנגן בדיוק כשהיא מגיעה. לא בטוחים איזה? נעזור לבחור.</p></article>
+        <article class="rv"><div class="ic"><svg viewBox="0 0 24 24"><path d="M8 3h8l-1 7a3 3 0 0 1-6 0z"/><path d="M12 13v7M8.5 21h7"/></svg></div><h3>שמפניה וכוסות</h3><p>בקבוק שמפניה וכוסות מהודרות להרמת הכוסית הראשונה כמאורסים.</p></article>
       </div>
     </div>
   </section>
 
-  <section id="styles" class="styles">
+  <section id="styles" class="alt">
     <div class="wrap">
-      <div class="head">
+      <div class="head rv">
         <p class="eyebrow">סגנונות עיצוב</p>
         <h2>בוחרים את האווירה</h2>
-        <p>מרומנטי וקלאסי ועד בוהו טבעי. כל סגנון אפשר להתאים לצבעים ולמקום שבחרתם.</p>
+        <p>מרומנטי וקלאסי ועד בוהו טבעי. לחצו על תמונה כדי לראות אותה בגדול.</p>
       </div>
-      <div class="style-grid">
-        <div class="style-card"><div class="ph"><img loading="lazy" src="https://ringevents.co.il/wp-content/uploads/2023/12/IMG_5098-1-1-scaled.webp" alt="" onerror="this.remove()"></div><h3>פרחים ונרות</h3></div>
-        <div class="style-card"><div class="ph"><img loading="lazy" src="https://ringevents.co.il/wp-content/uploads/2023/03/IMG-9731-1-scaled.webp" alt="" onerror="this.remove()"></div><h3>כיתוב מואר</h3></div>
-        <div class="style-card"><div class="ph"><img loading="lazy" src="https://ringevents.co.il/wp-content/uploads/2023/03/IMG-5695-1-scaled-e1679916995330.webp" alt="" onerror="this.remove()"></div><h3>לב מפרחים</h3></div>
-        <div class="style-card"><div class="ph"><img loading="lazy" src="https://ringevents.co.il/wp-content/uploads/2023/03/IMG-2702-1-scaled-e1679917164130.webp" alt="" onerror="this.remove()"></div><h3>טבעת פרחים</h3></div>
-        <div class="style-card"><div class="ph"><img loading="lazy" src="https://ringevents.co.il/wp-content/uploads/2023/03/IMG-3067-1-scaled-e1679917332125.webp" alt="" onerror="this.remove()"></div><h3>אוהל טיפי בוהו</h3></div>
-        <div class="style-card"><div class="ph"><img loading="lazy" src="https://ringevents.co.il/wp-content/uploads/2023/03/IMG-5183-scaled.webp" alt="" onerror="this.remove()"></div><h3>אותיות MARRY ME</h3></div>
-        <div class="style-card"><div class="ph"><img loading="lazy" src="https://ringevents.co.il/wp-content/uploads/2023/03/IMG-5150-scaled.webp" alt="" onerror="this.remove()"></div><h3>מעגל בוהו</h3></div>
-        <div class="style-card"><div class="ph"><img loading="lazy" src="https://ringevents.co.il/wp-content/uploads/2023/03/IMG-8592-1-scaled.webp" alt="" onerror="this.remove()"></div><h3>חופת פרחים</h3></div>
-        <div class="style-card"><div class="ph"><img loading="lazy" src="https://ringevents.co.il/wp-content/uploads/2023/03/IMG-7977-1-scaled.webp" alt="" onerror="this.remove()"></div><h3>חופת במבוק</h3></div>
-        <div class="style-card"><div class="ph"><img loading="lazy" src="https://ringevents.co.il/wp-content/uploads/2023/03/IMG-2460-1-scaled.webp" alt="" onerror="this.remove()"></div><h3>מעגל פרחים</h3></div>
+      <div class="style-grid" data-gallery="styles">
+        <button class="style-card rv" type="button"><span class="ph"><img loading="lazy" src="https://ringevents.co.il/wp-content/uploads/2023/12/IMG_5098-1-1-scaled.webp" alt="סגנון פרחים ונרות" onerror="this.remove()"></span><span class="cap">פרחים ונרות</span></button>
+        <button class="style-card rv" type="button"><span class="ph"><img loading="lazy" src="https://ringevents.co.il/wp-content/uploads/2023/03/IMG-9731-1-scaled.webp" alt="סגנון כיתוב מואר" onerror="this.remove()"></span><span class="cap">כיתוב מואר</span></button>
+        <button class="style-card rv" type="button"><span class="ph"><img loading="lazy" src="https://ringevents.co.il/wp-content/uploads/2023/03/IMG-5695-1-scaled-e1679916995330.webp" alt="סגנון לב מפרחים" onerror="this.remove()"></span><span class="cap">לב מפרחים</span></button>
+        <button class="style-card rv" type="button"><span class="ph"><img loading="lazy" src="https://ringevents.co.il/wp-content/uploads/2023/03/IMG-2702-1-scaled-e1679917164130.webp" alt="סגנון טבעת פרחים" onerror="this.remove()"></span><span class="cap">טבעת פרחים</span></button>
+        <button class="style-card rv" type="button"><span class="ph"><img loading="lazy" src="https://ringevents.co.il/wp-content/uploads/2023/03/IMG-3067-1-scaled-e1679917332125.webp" alt="סגנון אוהל טיפי בוהו" onerror="this.remove()"></span><span class="cap">אוהל טיפי בוהו</span></button>
+        <button class="style-card rv" type="button"><span class="ph"><img loading="lazy" src="https://ringevents.co.il/wp-content/uploads/2023/03/IMG-5183-scaled.webp" alt="אותיות MARRY ME" onerror="this.remove()"></span><span class="cap">אותיות MARRY ME</span></button>
+        <button class="style-card rv" type="button"><span class="ph"><img loading="lazy" src="https://ringevents.co.il/wp-content/uploads/2023/03/IMG-5150-scaled.webp" alt="סגנון מעגל בוהו" onerror="this.remove()"></span><span class="cap">מעגל בוהו</span></button>
+        <button class="style-card rv" type="button"><span class="ph"><img loading="lazy" src="https://ringevents.co.il/wp-content/uploads/2023/03/IMG-8592-1-scaled.webp" alt="סגנון חופת פרחים" onerror="this.remove()"></span><span class="cap">חופת פרחים</span></button>
+        <button class="style-card rv" type="button"><span class="ph"><img loading="lazy" src="https://ringevents.co.il/wp-content/uploads/2023/03/IMG-7977-1-scaled.webp" alt="סגנון חופת במבוק" onerror="this.remove()"></span><span class="cap">חופת במבוק</span></button>
+        <button class="style-card rv" type="button"><span class="ph"><img loading="lazy" src="https://ringevents.co.il/wp-content/uploads/2023/03/IMG-2460-1-scaled.webp" alt="סגנון מעגל פרחים" onerror="this.remove()"></span><span class="cap">מעגל פרחים</span></button>
       </div>
     </div>
   </section>
 
-  <section id="where" class="dark">
-    <div class="wrap split">
-      <div>
-        <div class="head">
-          <p class="eyebrow">איפה ואיך</p>
-          <h2>בכל מקום שמתאים לסיפור שלכם</h2>
+  <section id="builder">
+    <div class="wrap">
+      <div class="head rv">
+        <p class="eyebrow">בנו את ההצעה שלכם</p>
+        <h2>איך תיראה ההצעה שלכם?</h2>
+        <p>בחרו מיקום, סגנון ואווירה. בסוף שלחו לנו את ההצעה בוואטסאפ ונחזור אליכם עם הצעת מחיר.</p>
+      </div>
+      <div class="builder">
+        <div class="b-steps">
+          <div class="b-step" data-label="מיקום">
+            <h3><small>01</small> איפה?</h3>
+            <div class="opts"><button class="opt" type="button">על הים</button><button class="opt" type="button">בטבע</button><button class="opt" type="button">במסעדה</button><button class="opt" type="button">בטיסה</button><button class="opt" type="button">ביאכטה</button><button class="opt" type="button">בטיול ג׳יפים</button></div>
+          </div>
+          <div class="b-step" data-label="סגנון">
+            <h3><small>02</small> באיזה סגנון?</h3>
+            <div class="opts"><button class="opt" type="button">פרחים ונרות</button><button class="opt" type="button">כיתוב מואר</button><button class="opt" type="button">לב מפרחים</button><button class="opt" type="button">טבעת פרחים</button><button class="opt" type="button">אוהל טיפי בוהו</button><button class="opt script" type="button">Marry Me</button><button class="opt" type="button">מעגל בוהו</button><button class="opt" type="button">חופת פרחים</button><button class="opt" type="button">חופת במבוק</button><button class="opt" type="button">מעגל פרחים</button></div>
+          </div>
+          <div class="b-step" data-label="אווירה">
+            <h3><small>03</small> עם מי?</h3>
+            <div class="opts"><button class="opt" type="button">רק שנינו</button><button class="opt" type="button">עם משפחה וחברים</button></div>
+          </div>
+          <div class="b-step" data-label="תוספות" data-multi="1">
+            <h3><small>04</small> תוספות <em>(אפשר לבחור כמה)</em></h3>
+            <div class="opts"><button class="opt" type="button">זיקוקים</button><button class="opt" type="button">כוסות ממותגות</button><button class="opt" type="button">שולחן עם השמות שלכם</button><button class="opt" type="button">שביל בצבע לבחירה</button><button class="opt" type="button">אותיות זהב או לבן</button><button class="opt" type="button">שלט ממותג אישי</button></div>
+          </div>
         </div>
-        <ul class="places">
-          <li><b>על הים</b><small>שקיעה וחול</small></li>
-          <li><b>בטבע</b><small>נוף פתוח</small></li>
-          <li><b>במסעדה</b><small>ערב אינטימי</small></li>
-          <li><b>בטיסה</b><small>מעל העננים</small></li>
-          <li><b>ביאכטה</b><small>שייט פרטי</small></li>
-          <li><b>בטיול ג׳יפים</b><small>הרפתקה</small></li>
-        </ul>
-      </div>
-      <div class="modes">
-        <div class="mode"><h3>רק שניכם</h3><p>הפקה אינטימית ושקטה, שבה כל הרגע שייך לכם.</p></div>
-        <div class="mode"><h3>עם המשפחה והחברים</h3><p>כולם מחכים בסוד ומצטרפים לחגוג ברגע שהיא אומרת כן.</p></div>
-        <div class="mode"><h3>יוקרתי או פשוט</h3><p>מהפקה מלאה עם כל התוספות ועד עיצוב צנוע ומדויק. מתאימים לתקציב ולסגנון.</p></div>
+        <aside class="summary" aria-live="polite">
+          <span class="script">Our moment</span>
+          <h3>ההצעה שלכם</h3>
+          <div class="meter"><i id="meter"></i></div>
+          <dl id="sumList"></dl>
+          <a class="btn btn-wa" id="builderSend" href="https://wa.me/972585781866">
+            <svg viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm4.5 12.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.3-.4.8-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg>
+            שלחו לנו את ההצעה
+          </a>
+        </aside>
       </div>
     </div>
   </section>
 
-  <section class="styles" aria-labelledby="up-h">
+  <section id="process" class="alt">
     <div class="wrap">
-      <div class="head">
-        <p class="eyebrow">תוספות</p>
-        <h2 id="up-h">רוצים להגדיל את הרגע?</h2>
-        <p>אפשר להוסיף לכל הפקה:</p>
-      </div>
-      <div class="chips">
-        <span>זיקוקים</span>
-        <span>כוסות ממותגות</span>
-        <span>שולחן ממותג עם השמות שלכם</span>
-        <span>שביל בצבע לבחירתכם</span>
-        <span class="marry">Marry Me</span>
-        <span>אותיות בזהב או בלבן</span>
-        <span>שלט ממותג אישי</span>
-        <span>ועוד, לפי הרעיון שלכם</span>
-      </div>
-    </div>
-  </section>
-
-  <section id="process">
-    <div class="wrap">
-      <div class="head">
+      <div class="head center rv">
         <p class="eyebrow">התהליך</p>
         <h2>איך זה עובד</h2>
       </div>
       <ol class="steps">
-        <li><h3>שיחת היכרות</h3><p>מספרים לנו עליכם, על התאריך ועל החלום. בוואטסאפ או בטלפון.</p></li>
-        <li><h3>בוחרים סגנון ומקום</h3><p>מתאימים עיצוב, מיקום, שיר ותוספות.</p></li>
-        <li><h3>מתאמים בסוד</h3><p>אנחנו דואגים ללוגיסטיקה ולתזמון כדי שהיא לא תחשוד בכלום.</p></li>
-        <li><h3>היא אומרת כן</h3><p>אתם נהנים מהרגע. התמונות והסרטון נשארים לכם לתמיד.</p></li>
+        <li class="rv"><h3>שיחת היכרות</h3><p>מספרים לנו עליכם, על התאריך ועל החלום. בוואטסאפ או בטלפון.</p></li>
+        <li class="rv"><h3>בוחרים סגנון ומקום</h3><p>מתאימים עיצוב, מיקום, שיר ותוספות.</p></li>
+        <li class="rv"><h3>מתאמים בסוד</h3><p>אנחנו דואגים ללוגיסטיקה ולתזמון כדי שהיא לא תחשוד בכלום.</p></li>
+        <li class="rv"><h3>היא אומרת כן</h3><p>אתם נהנים מהרגע. התמונות והסרטון נשארים לכם לתמיד.</p></li>
       </ol>
     </div>
   </section>
 
-  <section id="couples" class="styles">
+  <section id="videos">
     <div class="wrap">
-      <div class="head">
+      <div class="reels-head">
+        <div class="head rv">
+          <p class="eyebrow">וידאו</p>
+          <h2>לראות את הרגע קורה</h2>
+          <p>סרטונים מהפקות אמיתיות. ככה נראה הסרטון שתקבלו.</p>
+        </div>
+        <div class="arrows">
+          <button type="button" id="reelPrev" aria-label="הסרטון הקודם"><svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button>
+          <button type="button" id="reelNext" aria-label="הסרטון הבא"><svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg></button>
+        </div>
+      </div>
+      <div class="reels" id="reels"></div>
+    </div>
+  </section>
+
+  <section id="couples" class="alt">
+    <div class="wrap">
+      <div class="head rv">
         <p class="eyebrow">הזוגות שלנו</p>
         <h2>רגעים שכבר הפקנו</h2>
       </div>
-      <div class="mosaic">
-        <div class="ph tall"><img loading="lazy" src="https://ringevents.co.il/wp-content/uploads/2023/08/IMG-0756-1-1-scaled-e1693227679804.webp" alt="זוג מאורס בהפקת רינג הפקות" onerror="this.remove()"></div>
-        <div class="ph wide"><img loading="lazy" src="https://ringevents.co.il/wp-content/uploads/2023/03/IMG-7004-scaled.webp" alt="זוג מאורס בהפקת רינג הפקות" onerror="this.remove()"></div>
-        <div class="ph tall"><img loading="lazy" src="https://ringevents.co.il/wp-content/uploads/2023/03/IMG-5570-scaled.webp" alt="זוג מאורס בהפקת רינג הפקות" onerror="this.remove()"></div>
-        <div class="ph"><img loading="lazy" src="https://ringevents.co.il/wp-content/uploads/2023/03/IMG-5262-scaled.webp" alt="זוג מאורס בהפקת רינג הפקות" onerror="this.remove()"></div>
-        <div class="ph"><img loading="lazy" src="https://ringevents.co.il/wp-content/uploads/2023/03/IMG-6827-scaled.webp" alt="זוג מאורס בהפקת רינג הפקות" onerror="this.remove()"></div>
-        <div class="ph wide"><img loading="lazy" src="https://ringevents.co.il/wp-content/uploads/2023/03/IMG-3641-scaled.webp" alt="זוג מאורס בהפקת רינג הפקות" onerror="this.remove()"></div>
-        <div class="ph"><img loading="lazy" src="https://ringevents.co.il/wp-content/uploads/2023/12/IMG_7252-1-1-scaled-e1702417241486.webp" alt="זוג מאורס בהפקת רינג הפקות" onerror="this.remove()"></div>
-        <div class="ph"><img loading="lazy" src="https://ringevents.co.il/wp-content/uploads/2023/03/IMG-5685-scaled.webp" alt="זוג מאורס בהפקת רינג הפקות" onerror="this.remove()"></div>
-      </div>
-      <div class="more">
-        <a class="btn btn-ghost" href="https://www.instagram.com/ring_events_">עוד באינסטגרם</a>
-        <a class="btn btn-ghost" href="#videos">לסרטונים</a>
+      <div class="mosaic" data-gallery="couples">
+        <button type="button" class="tall rv"><span class="ph"><img loading="lazy" src="https://ringevents.co.il/wp-content/uploads/2023/08/IMG-0756-1-1-scaled-e1693227679804.webp" alt="זוג מאורס בהפקת רינג הפקות" onerror="this.remove()"></span></button>
+        <button type="button" class="wide rv"><span class="ph"><img loading="lazy" src="https://ringevents.co.il/wp-content/uploads/2023/03/IMG-7004-scaled.webp" alt="זוג מאורס בהפקת רינג הפקות" onerror="this.remove()"></span></button>
+        <button type="button" class="tall rv"><span class="ph"><img loading="lazy" src="https://ringevents.co.il/wp-content/uploads/2023/03/IMG-5570-scaled.webp" alt="זוג מאורס בהפקת רינג הפקות" onerror="this.remove()"></span></button>
+        <button type="button" class="rv"><span class="ph"><img loading="lazy" src="https://ringevents.co.il/wp-content/uploads/2023/03/IMG-5262-scaled.webp" alt="זוג מאורס בהפקת רינג הפקות" onerror="this.remove()"></span></button>
+        <button type="button" class="rv"><span class="ph"><img loading="lazy" src="https://ringevents.co.il/wp-content/uploads/2023/03/IMG-6827-scaled.webp" alt="זוג מאורס בהפקת רינג הפקות" onerror="this.remove()"></span></button>
+        <button type="button" class="wide rv"><span class="ph"><img loading="lazy" src="https://ringevents.co.il/wp-content/uploads/2023/03/IMG-3641-scaled.webp" alt="זוג מאורס בהפקת רינג הפקות" onerror="this.remove()"></span></button>
+        <button type="button" class="rv"><span class="ph"><img loading="lazy" src="https://ringevents.co.il/wp-content/uploads/2023/12/IMG_7252-1-1-scaled-e1702417241486.webp" alt="זוג מאורס בהפקת רינג הפקות" onerror="this.remove()"></span></button>
+        <button type="button" class="rv"><span class="ph"><img loading="lazy" src="https://ringevents.co.il/wp-content/uploads/2023/03/IMG-5685-scaled.webp" alt="זוג מאורס בהפקת רינג הפקות" onerror="this.remove()"></span></button>
+        <button type="button" class="tall rv"><span class="ph"><img loading="lazy" src="https://ringevents.co.il/wp-content/uploads/2023/03/IMG-3196-scaled.webp" alt="זוג מאורס בהפקת רינג הפקות" onerror="this.remove()"></span></button>
+        <button type="button" class="wide rv"><span class="ph"><img loading="lazy" src="https://ringevents.co.il/wp-content/uploads/2023/03/IMG-3126-1-scaled.webp" alt="זוג מאורס בהפקת רינג הפקות" onerror="this.remove()"></span></button>
+        <button type="button" class="rv"><span class="ph"><img loading="lazy" src="https://ringevents.co.il/wp-content/uploads/2023/12/IMG_3353-1-1-scaled.webp" alt="זוג מאורס בהפקת רינג הפקות" onerror="this.remove()"></span></button>
+        <button type="button" class="rv"><span class="ph"><img loading="lazy" src="https://ringevents.co.il/wp-content/uploads/2023/03/IMG-5439-scaled.webp" alt="זוג מאורס בהפקת רינג הפקות" onerror="this.remove()"></span></button>
       </div>
     </div>
   </section>
 
-  <section id="videos" class="dark">
+  <section>
     <div class="wrap">
-      <div class="head">
-        <p class="eyebrow">וידאו</p>
-        <h2>לראות את הרגע קורה</h2>
-        <p>סרטונים מהפקות אמיתיות. ככה נראה הסרטון שתקבלו.</p>
+      <div class="band rv">
+        <span class="script">Will you marry me?</span>
+        <h2>הטבעת אצלכם. את השאר תשאירו לנו</h2>
+        <p>ספרו לנו על התאריך ועל האזור, ונחזור אליכם עם רעיונות והצעת מחיר.</p>
+        <div class="ctas">
+          <button class="btn btn-gold" type="button" data-open="leadModal">השאירו פרטים</button>
+          <a class="btn btn-ghost" href="tel:0585781866" data-track="call">התקשרו: 058-578-1866</a>
+        </div>
       </div>
-      <div class="vids" id="vids">
-        <div class="vid ph" data-id="vGQ1KDvf1dQ"><button type="button" aria-label="הפעלת סרטון 1"><img loading="lazy" src="https://i.ytimg.com/vi/vGQ1KDvf1dQ/hqdefault.jpg" alt="" onerror="this.remove()"><span class="play"></span></button><a class="yt" href="https://www.youtube.com/watch?v=vGQ1KDvf1dQ">YouTube</a></div>
-        <div class="vid ph" data-id="F56RIDGbgIA"><button type="button" aria-label="הפעלת סרטון 2"><img loading="lazy" src="https://i.ytimg.com/vi/F56RIDGbgIA/hqdefault.jpg" alt="" onerror="this.remove()"><span class="play"></span></button><a class="yt" href="https://www.youtube.com/watch?v=F56RIDGbgIA">YouTube</a></div>
-        <div class="vid ph" data-id="1l_d7asaIh8"><button type="button" aria-label="הפעלת סרטון 3"><img loading="lazy" src="https://i.ytimg.com/vi/1l_d7asaIh8/hqdefault.jpg" alt="" onerror="this.remove()"><span class="play"></span></button><a class="yt" href="https://www.youtube.com/watch?v=1l_d7asaIh8">YouTube</a></div>
-        <div class="vid ph" data-id="zM22wjaQnVQ"><button type="button" aria-label="הפעלת סרטון 4"><img loading="lazy" src="https://i.ytimg.com/vi/zM22wjaQnVQ/hqdefault.jpg" alt="" onerror="this.remove()"><span class="play"></span></button><a class="yt" href="https://www.youtube.com/watch?v=zM22wjaQnVQ">YouTube</a></div>
-        <div class="vid ph" data-id="ZSKGI_1Yay4"><button type="button" aria-label="הפעלת סרטון 5"><img loading="lazy" src="https://i.ytimg.com/vi/ZSKGI_1Yay4/hqdefault.jpg" alt="" onerror="this.remove()"><span class="play"></span></button><a class="yt" href="https://www.youtube.com/watch?v=ZSKGI_1Yay4">YouTube</a></div>
-        <div class="vid ph" data-id="TLwrfXuSb3s"><button type="button" aria-label="הפעלת סרטון 6"><img loading="lazy" src="https://i.ytimg.com/vi/TLwrfXuSb3s/hqdefault.jpg" alt="" onerror="this.remove()"><span class="play"></span></button><a class="yt" href="https://www.youtube.com/watch?v=TLwrfXuSb3s">YouTube</a></div>
-        <div class="vid ph extra" data-id="aYh2J6DqOaQ"><button type="button" aria-label="הפעלת סרטון 7"><img loading="lazy" src="https://i.ytimg.com/vi/aYh2J6DqOaQ/hqdefault.jpg" alt="" onerror="this.remove()"><span class="play"></span></button><a class="yt" href="https://www.youtube.com/watch?v=aYh2J6DqOaQ">YouTube</a></div>
-        <div class="vid ph extra" data-id="LQnoBkdrLg8"><button type="button" aria-label="הפעלת סרטון 8"><img loading="lazy" src="https://i.ytimg.com/vi/LQnoBkdrLg8/hqdefault.jpg" alt="" onerror="this.remove()"><span class="play"></span></button><a class="yt" href="https://www.youtube.com/watch?v=LQnoBkdrLg8">YouTube</a></div>
-        <div class="vid ph extra" data-id="geCTa-bcwvw"><button type="button" aria-label="הפעלת סרטון 9"><img loading="lazy" src="https://i.ytimg.com/vi/geCTa-bcwvw/hqdefault.jpg" alt="" onerror="this.remove()"><span class="play"></span></button><a class="yt" href="https://www.youtube.com/watch?v=geCTa-bcwvw">YouTube</a></div>
-        <div class="vid ph extra" data-id="2bkamy0UihM"><button type="button" aria-label="הפעלת סרטון 10"><img loading="lazy" src="https://i.ytimg.com/vi/2bkamy0UihM/hqdefault.jpg" alt="" onerror="this.remove()"><span class="play"></span></button><a class="yt" href="https://www.youtube.com/watch?v=2bkamy0UihM">YouTube</a></div>
-        <div class="vid ph extra" data-id="lufvTCd5T24"><button type="button" aria-label="הפעלת סרטון 11"><img loading="lazy" src="https://i.ytimg.com/vi/lufvTCd5T24/hqdefault.jpg" alt="" onerror="this.remove()"><span class="play"></span></button><a class="yt" href="https://www.youtube.com/watch?v=lufvTCd5T24">YouTube</a></div>
-        <div class="vid ph extra" data-id="1CT06oh-yHY"><button type="button" aria-label="הפעלת סרטון 12"><img loading="lazy" src="https://i.ytimg.com/vi/1CT06oh-yHY/hqdefault.jpg" alt="" onerror="this.remove()"><span class="play"></span></button><a class="yt" href="https://www.youtube.com/watch?v=1CT06oh-yHY">YouTube</a></div>
-      </div>
-      <div class="more"><button class="btn btn-gold" type="button" id="more-vids" aria-controls="vids" aria-expanded="false">עוד סרטונים</button><a class="btn btn-ghost" href="https://www.youtube.com/channel/UC25QVVGlGbdLrEeHdpeA7HQ">לערוץ היוטיוב</a></div>
     </div>
   </section>
 
-  <section id="contact" class="contact dark">
-    <div class="wrap split">
-      <div>
+  <section id="contact" class="alt">
+    <div class="wrap contact-grid">
+      <div class="rv">
         <div class="head">
-          <p class="eyebrow">יש לכם טבעת?</p>
+          <p class="eyebrow">צרו קשר</p>
           <h2>בואו נתכנן את ההצעה שלכם</h2>
-          <p>שלחו כמה פרטים ונחזור אליכם עם רעיונות שמתאימים לכם.</p>
+          <p>השאירו שם, טלפון ואזור, ונחזור אליכם בהקדם.</p>
         </div>
         <div class="lines">
-          <a href="tel:0585781866"><small>טלפון</small><b>058-578-1866</b></a>
-          <a href="tel:0747225752"><small>טלפון נוסף</small><b>074-722-5752</b></a>
+          <a href="tel:0585781866" data-track="call"><small>טלפון</small><b>058-578-1866</b></a>
+          <a href="tel:0747225752" data-track="call"><small>טלפון נוסף</small><b>074-722-5752</b></a>
           <a href="mailto:RingEvents.il@gmail.com"><small>אימייל</small><b>RingEvents.il@gmail.com</b></a>
           <div><small>אזור פעילות</small><b style="direction:rtl">בכל הארץ · טבריה</b></div>
         </div>
+        <div class="socials">
+          <a href="https://www.facebook.com/RingEvents.il" aria-label="פייסבוק"><svg viewBox="0 0 24 24"><path d="M14 9h3V5h-3a4 4 0 0 0-4 4v2H8v4h2v7h4v-7h3l1-4h-4V9.5c0-.3.2-.5.5-.5z"/></svg></a>
+          <a href="https://www.instagram.com/ring_events_" aria-label="אינסטגרם"><svg viewBox="0 0 24 24"><path d="M12 7.3A4.7 4.7 0 1 0 16.7 12 4.7 4.7 0 0 0 12 7.3zm0 7.7a3 3 0 1 1 3-3 3 3 0 0 1-3 3zm6-7.9a1.1 1.1 0 1 1-1.1-1.1A1.1 1.1 0 0 1 18 7.1zM21 7.2a5.4 5.4 0 0 0-1.5-3.8A5.4 5.4 0 0 0 15.7 2C14.2 2 9.8 2 8.3 2a5.4 5.4 0 0 0-3.8 1.4A5.4 5.4 0 0 0 3 7.2C3 8.7 3 15.3 3 16.8a5.4 5.4 0 0 0 1.5 3.8A5.4 5.4 0 0 0 8.3 22c1.5 0 5.9 0 7.4 0a5.4 5.4 0 0 0 3.8-1.4 5.4 5.4 0 0 0 1.5-3.8c.1-1.5.1-8.1 0-9.6zm-2 11.3a3 3 0 0 1-1.7 1.7c-1.2.5-4 .4-5.3.4s-4.1.1-5.3-.4a3 3 0 0 1-1.7-1.7c-.5-1.2-.4-4-.4-5.3s-.1-4.1.4-5.3a3 3 0 0 1 1.7-1.7C6.9 5.7 9.7 5.8 11 5.8s4.1-.1 5.3.4A3 3 0 0 1 18 7.9c.5 1.2.4 4 .4 5.3s.1 4.1-.4 5.3z"/></svg></a>
+          <a href="https://www.youtube.com/channel/UC25QVVGlGbdLrEeHdpeA7HQ" aria-label="יוטיוב"><svg viewBox="0 0 24 24"><path d="M22 8.2a3 3 0 0 0-2.1-2.1C18 5.6 12 5.6 12 5.6s-6 0-7.9.5A3 3 0 0 0 2 8.2 31 31 0 0 0 1.6 12 31 31 0 0 0 2 15.8a3 3 0 0 0 2.1 2.1c1.9.5 7.9.5 7.9.5s6 0 7.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .4-3.8 31 31 0 0 0-.4-3.8zM10 15V9l5.2 3z"/></svg></a>
+        </div>
       </div>
-      <form id="lead" novalidate>
-        <h3>פרטים להצעה</h3>
-        <div class="row2">
-          <label for="f-name">שם<input id="f-name" name="name" required autocomplete="name"></label>
-          <label for="f-phone">טלפון<input id="f-phone" name="phone" type="tel" required autocomplete="tel" dir="ltr"></label>
-        </div>
-        <div class="row2">
-          <label for="f-date">תאריך משוער<input id="f-date" name="date" type="date"></label>
-          <label for="f-place">מיקום מועדף
-            <select id="f-place" name="place">
-              <option>עוד לא החלטתי</option><option>על הים</option><option>בטבע</option><option>במסעדה</option><option>בטיסה</option><option>ביאכטה</option><option>בטיול ג׳יפים</option>
-            </select>
-          </label>
-        </div>
-        <label for="f-msg">ספרו לנו קצת<textarea id="f-msg" name="msg" placeholder="למשל: היא אוהבת פרחים לבנים ושקיעות"></textarea></label>
-        <button class="btn btn-gold" type="submit">המשך לשליחה בוואטסאפ</button>
-        <div class="form-out" id="out" role="status">
-          <p>ההודעה מוכנה. לחצו כדי לפתוח אותה בוואטסאפ ולשלוח:</p>
-          <a class="btn btn-gold" id="wa-link" href="https://wa.me/972585781866">פתיחה בוואטסאפ</a>
-        </div>
-      </form>
+      <div class="rv" id="contactFormSlot"></div>
     </div>
   </section>
 </main>
 
 <footer>
   <div class="wrap foot">
-    <div><img src="logo-light.png" alt="Ring Events" width="109" height="96"><div>© רינג הפקות · הפקת הצעות נישואין</div></div>
+    <img src="logo-light.png" alt="Ring Events" width="102" height="90">
     <nav aria-label="קישורים">
-      <a href="https://www.facebook.com/RingEvents.il">פייסבוק</a>
-      <a href="https://www.instagram.com/ring_events_">אינסטגרם</a>
-      <a href="https://www.youtube.com/channel/UC25QVVGlGbdLrEeHdpeA7HQ">יוטיוב</a>
+      <a href="#styles">סגנונות</a>
+      <a href="#videos">וידאו</a>
+      <a href="#contact">צרו קשר</a>
       <a href="#">מדיניות פרטיות</a>
       <a href="#">הצהרת נגישות</a>
     </nav>
+    <div>© רינג הפקות · הפקת הצעות נישואין</div>
   </div>
 </footer>
 
-<a class="wa" href="https://wa.me/972585781866" aria-label="שליחת הודעה בוואטסאפ">
-  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.3-.4.8-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg>
-</a>
+<nav class="actionbar" aria-label="יצירת קשר מהירה">
+  <a class="wa" href="https://wa.me/972585781866?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%A4%D7%A8%D7%98%D7%99%D7%9D%20%D7%A2%D7%9C%20%D7%94%D7%A4%D7%A7%D7%AA%20%D7%94%D7%A6%D7%A2%D7%AA%20%D7%A0%D7%99%D7%A9%D7%95%D7%90%D7%99%D7%9F" data-track="whatsapp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.3-.4.8-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg>
+    וואטסאפ
+  </a>
+  <a class="call" href="tel:0585781866" data-track="call">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg>
+    שיחה
+  </a>
+  <button class="lead" type="button" data-open="leadModal">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v12H8l-4 4z"/><path d="M8 9h8M8 12h5"/></svg>
+    השארת פרטים
+  </button>
+</nav>
+
+<div class="modal" id="leadModal" role="dialog" aria-modal="true" aria-labelledby="leadModalTitle">
+  <div class="modal-card">
+    <button class="x" type="button" data-close aria-label="סגירה">×</button>
+    <div data-form-slot data-title="נשמח לחזור אליכם" data-title-id="leadModalTitle" data-source="חלון השארת פרטים"></div>
+  </div>
+</div>
+
+<div class="modal" id="exitModal" role="dialog" aria-modal="true" aria-labelledby="exitTitle">
+  <div class="modal-card">
+    <button class="x" type="button" data-close aria-label="סגירה">×</button>
+    <div class="offer-top">
+      <span class="script">Wait…</span>
+      <h3 id="exitTitle">רגע לפני שאתם הולכים</h3>
+      <div class="price"><small>הצעת נישואין מלאה החל מ־</small><b>1,200 ₪</b></div>
+      <p class="note">השאירו פרטים עכשיו ונשמור לכם את המחיר</p>
+      <ul class="offer-incl"><li>צילום ללא הגבלה</li><li>סרטון כניסה</li><li>שיר אישי</li><li>שמפניה</li></ul>
+    </div>
+    <div data-form-slot data-title="" data-source="פופאפ יציאה – הצעה מ־1,200 ₪"></div>
+  </div>
+</div>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="תצוגת תמונה">
+  <button class="x" type="button" id="lbClose" aria-label="סגירה">×</button>
+  <button class="nav-b prev" type="button" id="lbPrev" aria-label="התמונה הקודמת"><svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button>
+  <img id="lbImg" alt="">
+  <button class="nav-b next" type="button" id="lbNext" aria-label="התמונה הבאה"><svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg></button>
+  <span class="count" id="lbCount"></span>
+</div>
+
+<template id="formTpl">
+  <form class="lead-form" novalidate>
+    <div class="fields">
+      <h3 class="f-title">השאירו פרטים</h3>
+      <p class="sub">נחזור אליכם בהקדם, בדיסקרטיות מלאה.</p>
+      <label>שם מלא<input name="name" autocomplete="name" required><span class="err" aria-live="polite"></span></label>
+      <label>טלפון<input name="phone" type="tel" inputmode="tel" autocomplete="tel" dir="ltr" required placeholder="05X-XXX-XXXX"><span class="err" aria-live="polite"></span></label>
+      <label>אזור בארץ
+        <select name="region" required>
+          <option value="">בחרו אזור</option>
+          <option>צפון</option>
+          <option>חיפה והקריות</option>
+          <option>שרון</option>
+          <option>מרכז</option>
+          <option>ירושלים והסביבה</option>
+          <option>שפלה</option>
+          <option>דרום</option>
+          <option>אילת והערבה</option>
+        </select>
+        <span class="err" aria-live="polite"></span>
+      </label>
+      <button class="btn btn-gold" type="submit">שלחו ונחזור אליכם</button>
+      <p class="privacy">הפרטים נשלחים אלינו בוואטסאפ ולא יועברו לאף אחד אחר.</p>
+    </div>
+    <div class="done" role="status">
+      <div class="script">Thank you</div>
+      <p>ההודעה מוכנה בוואטסאפ. אם היא לא נפתחה, לחצו כאן:</p>
+      <a class="btn btn-wa wa-out" href="https://wa.me/972585781866">שליחה בוואטסאפ</a>
+    </div>
+  </form>
+</template>
 
 <script>
-document.querySelectorAll('.vid button').forEach(function(b){
-  b.addEventListener('click',function(){
-    var box=b.parentNode,id=box.dataset.id,f=document.createElement('iframe');
-    f.src='https://www.youtube-nocookie.com/embed/'+id+'?autoplay=1&rel=0';
-    f.title='סרטון הצעת נישואין';f.allow='autoplay; encrypted-media; picture-in-picture';f.allowFullscreen=true;
-    box.replaceChild(f,b);
+(function(){
+  var WA='972585781866';
+  function track(ev,data){ try{ (window.dataLayer=window.dataLayer||[]).push(Object.assign({event:ev},data||{})); if(window.fbq) fbq('track', ev==='lead'?'Lead':'Contact'); }catch(e){} }
+  function store(k,v){ try{ if(v===undefined) return sessionStorage.getItem(k); sessionStorage.setItem(k,v); }catch(e){ return null; } }
+  var mobile=function(){ return matchMedia('(max-width:900px)').matches; };
+
+  var hdr=document.getElementById('hdr');
+  function onScroll(){ hdr.classList.toggle('solid', scrollY>30); }
+  addEventListener('scroll',onScroll,{passive:true}); onScroll();
+
+  if('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches){
+    var io=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.remove('pre'); io.unobserve(e.target); } }); },{rootMargin:'0px 0px -8% 0px'});
+    document.querySelectorAll('.rv').forEach(function(el){ if(el.getBoundingClientRect().top>innerHeight){ el.classList.add('pre'); io.observe(el); } });
+  }
+
+  /* builder (defined early; used by forms) */
+  var steps=document.querySelectorAll('.b-step'), sum=document.getElementById('sumList'), meter=document.getElementById('meter'), send=document.getElementById('builderSend');
+  function picks(s){ return [].map.call(s.querySelectorAll('.opt[aria-pressed="true"]'),function(o){ return o.textContent.trim(); }); }
+  function builderText(){ return [].map.call(steps,function(s){ var p=picks(s); return p.length? s.dataset.label+': '+p.join(', '):''; }).filter(Boolean).join('\n'); }
+  function render(){
+    var done=0, html='';
+    steps.forEach(function(s){ var p=picks(s); if(p.length) done++; html+='<dt>'+s.dataset.label+'</dt><dd class="'+(p.length?'':'empty')+'">'+(p.length?p.join(', '):'עוד לא נבחר')+'</dd>'; });
+    sum.innerHTML=html; meter.style.width=(done/steps.length*100)+'%';
+    send.href='https://wa.me/'+WA+'?text='+encodeURIComponent('היי רינג הפקות, בניתי באתר את ההצעה שלי:\n'+(builderText()||'עוד לא בחרתי, אשמח לרעיונות'));
+  }
+  steps.forEach(function(s){
+    s.querySelectorAll('.opt').forEach(function(o){
+      o.setAttribute('aria-pressed','false');
+      o.addEventListener('click',function(){
+        var on=o.getAttribute('aria-pressed')!=='true';
+        if(!s.dataset.multi) s.querySelectorAll('.opt').forEach(function(x){ x.setAttribute('aria-pressed','false'); });
+        o.setAttribute('aria-pressed',on?'true':'false'); render();
+      });
+    });
   });
-});
-document.getElementById('more-vids').addEventListener('click',function(){
-  var g=document.getElementById('vids'),o=g.classList.toggle('open');
-  this.setAttribute('aria-expanded',o);this.textContent=o?'פחות סרטונים':'עוד סרטונים';
-});
-document.getElementById('lead').addEventListener('submit', function(e){
-  e.preventDefault();
-  var f = e.target;
-  var name = f.name.value.trim(), phone = f.phone.value.trim();
-  if(!name || !phone){ (name ? f.phone : f.name).focus(); return; }
-  var t = 'היי, אני ' + name + ' (' + phone + '). אשמח לפרטים על הפקת הצעת נישואין.';
-  if(f.date.value) t += '\nתאריך משוער: ' + f.date.value;
-  t += '\nמיקום: ' + f.place.value;
-  if(f.msg.value.trim()) t += '\n' + f.msg.value.trim();
-  document.getElementById('wa-link').href = 'https://wa.me/972585781866?text=' + encodeURIComponent(t);
-  document.getElementById('out').classList.add('show');
-});
+  render();
+  send.addEventListener('click',function(){ track('builder_send',{choices:builderText()}); });
+
+  /* forms */
+  var tpl=document.getElementById('formTpl');
+  function setErr(el,msg){ el.parentNode.querySelector('.err').textContent=msg||''; el.setAttribute('aria-invalid',msg?'true':'false'); }
+  function mountForm(slot,title,source,titleId){
+    var f=tpl.content.firstElementChild.cloneNode(true), t=f.querySelector('.f-title');
+    if(title===''){ t.remove(); f.querySelector('.sub').remove(); } else { t.textContent=title; if(titleId) t.id=titleId; }
+    f.dataset.source=source||'טופס באתר';
+    slot.appendChild(f);
+    f.addEventListener('submit',function(ev){
+      ev.preventDefault();
+      var fn=f.elements.namedItem('name'), n=fn.value.trim(), p=f.phone.value.replace(/[^\d+]/g,''), r=f.region.value;
+      var pOk=/^(\+?972|0)5\d{8}$/.test(p)||/^0[2-9]\d{7,8}$/.test(p);
+      setErr(fn,n.length<2?'נא לכתוב שם':'');
+      setErr(f.phone,pOk?'':'נא לכתוב מספר טלפון תקין');
+      setErr(f.region,r?'':'נא לבחור אזור');
+      var bad=f.querySelector('[aria-invalid="true"]'); if(bad){ bad.focus(); return; }
+      var msg='היי רינג הפקות, אשמח לפרטים על הפקת הצעת נישואין.\nשם: '+n+'\nטלפון: '+p+'\nאזור: '+r;
+      if(f.dataset.source.indexOf('פופאפ')===0) msg+='\n(ראיתי באתר הצעה החל מ־1,200 ₪)';
+      var plan=builderText(); if(plan) msg+='\n\nמה בחרתי באתר:\n'+plan;
+      var url='https://wa.me/'+WA+'?text='+encodeURIComponent(msg);
+      f.querySelector('.wa-out').href=url; f.classList.add('sent');
+      store('re_lead','1'); track('lead',{form_source:f.dataset.source,region:r});
+      var w=window.open(url,'_blank'); if(!w) location.href=url;
+    });
+  }
+  mountForm(document.getElementById('contactFormSlot'),'השאירו פרטים','טופס צור קשר');
+  document.querySelectorAll('[data-form-slot]').forEach(function(s){ mountForm(s,s.dataset.title,s.dataset.source,s.dataset.titleId); });
+
+  /* modals */
+  var lastFocus=null;
+  function closeModal(m){ m.classList.remove('open'); document.body.style.overflow=''; if(lastFocus) try{ lastFocus.focus(); }catch(e){} }
+  function openModal(id){ var m=document.getElementById(id); if(!m||m.classList.contains('open')) return; lastFocus=document.activeElement; document.querySelectorAll('.modal.open').forEach(closeModal); m.classList.add('open'); document.body.style.overflow='hidden'; setTimeout(function(){ var i=m.querySelector('input'); if(i&&!mobile()) i.focus(); },60); }
+  document.querySelectorAll('[data-open]').forEach(function(b){ b.addEventListener('click',function(){ openModal(b.dataset.open); track('lead_open'); }); });
+  document.querySelectorAll('.modal').forEach(function(m){ m.addEventListener('click',function(e){ if(e.target===m||e.target.hasAttribute('data-close')) closeModal(m); }); });
+  document.querySelectorAll('[data-track]').forEach(function(a){ a.addEventListener('click',function(){ track('contact_'+a.dataset.track); }); });
+
+  /* exit intent */
+  var armed=false, shown=store('re_exit')==='1';
+  setTimeout(function(){ armed=true; },7000);
+  function showExit(){ if(!armed||shown||store('re_lead')==='1'||document.querySelector('.modal.open,.lb.open')) return; shown=true; store('re_exit','1'); openModal('exitModal'); track('exit_popup_shown'); }
+  document.addEventListener('mouseout',function(e){ if(!e.relatedTarget&&e.clientY<=0) showExit(); });
+  var maxY=0,lastY=0,lastT=0;
+  addEventListener('scroll',function(){
+    var y=scrollY,t=Date.now(); maxY=Math.max(maxY,y);
+    if(mobile()&&maxY>document.body.scrollHeight*.45&&lastY-y>140&&t-lastT<300) showExit();
+    lastY=y; lastT=t;
+  },{passive:true});
+  setTimeout(function(){ if(mobile()) showExit(); },45000);
+
+  /* reels */
+  var ids=['vGQ1KDvf1dQ','F56RIDGbgIA','1l_d7asaIh8','zM22wjaQnVQ','ZSKGI_1Yay4','TLwrfXuSb3s','aYh2J6DqOaQ','LQnoBkdrLg8','geCTa-bcwvw','2bkamy0UihM','lufvTCd5T24','1CT06oh-yHY'];
+  var reels=document.getElementById('reels');
+  ids.forEach(function(id,i){
+    var d=document.createElement('div'); d.className='reel ph';
+    d.innerHTML='<button type="button" aria-label="הפעלת סרטון '+(i+1)+'"><img loading="lazy" src="https://i.ytimg.com/vi/'+id+'/hqdefault.jpg" alt="" onerror="this.remove()"><span class="play"></span><span class="tag">הפקה #'+(i+1)+'</span></button>';
+    d.firstChild.addEventListener('click',function(){
+      reels.querySelectorAll('iframe').forEach(function(f){ f.src='about:blank'; });
+      var f=document.createElement('iframe');
+      f.src='https://www.youtube-nocookie.com/embed/'+id+'?autoplay=1&rel=0&playsinline=1';
+      f.title='סרטון הצעת נישואין '+(i+1); f.allow='autoplay; encrypted-media; picture-in-picture; fullscreen'; f.allowFullscreen=true;
+      d.replaceChild(f,d.firstChild); track('video_play',{video:id});
+    });
+    reels.appendChild(d);
+  });
+  function stepReels(dir){ var w=reels.querySelector('.reel').offsetWidth+16; reels.scrollBy({left:dir*w*2,behavior:'smooth'}); }
+  document.getElementById('reelNext').addEventListener('click',function(){ stepReels(-1); });
+  document.getElementById('reelPrev').addEventListener('click',function(){ stepReels(1); });
+
+  /* lightbox */
+  var lb=document.getElementById('lb'), lbImg=document.getElementById('lbImg'), lbCount=document.getElementById('lbCount'), list=[], idx=0, lbFrom=null;
+  function show(){ var im=list[idx]; lbImg.src=im.src; lbImg.alt=im.alt; lbCount.textContent=(idx+1)+' / '+list.length; }
+  function lbClose(){ lb.classList.remove('open'); document.body.style.overflow=''; if(lbFrom) lbFrom.focus(); }
+  function lbGo(d){ idx=(idx+d+list.length)%list.length; show(); }
+  document.querySelectorAll('[data-gallery]').forEach(function(g){
+    g.querySelectorAll('button').forEach(function(b){
+      b.addEventListener('click',function(){
+        list=[].slice.call(g.querySelectorAll('img')); var im=b.querySelector('img'); if(!im) return;
+        idx=list.indexOf(im); lbFrom=b; show(); lb.classList.add('open'); document.body.style.overflow='hidden'; document.getElementById('lbClose').focus(); track('gallery_open');
+      });
+    });
+  });
+  document.getElementById('lbClose').addEventListener('click',lbClose);
+  document.getElementById('lbNext').addEventListener('click',function(){ lbGo(1); });
+  document.getElementById('lbPrev').addEventListener('click',function(){ lbGo(-1); });
+  lb.addEventListener('click',function(e){ if(e.target===lb) lbClose(); });
+  var tx=0;
+  lb.addEventListener('touchstart',function(e){ tx=e.touches[0].clientX; },{passive:true});
+  lb.addEventListener('touchend',function(e){ var dx=e.changedTouches[0].clientX-tx; if(Math.abs(dx)>50) lbGo(dx>0?1:-1); });
+
+  document.addEventListener('keydown',function(e){
+    if(lb.classList.contains('open')){ if(e.key==='Escape') lbClose(); if(e.key==='ArrowLeft') lbGo(1); if(e.key==='ArrowRight') lbGo(-1); return; }
+    if(e.key==='Escape') document.querySelectorAll('.modal.open').forEach(closeModal);
+  });
+})();
 </script>
 </body>
 </html>
