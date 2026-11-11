@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>רינג הפקות</title>
+<meta name="description" content="רינג הפקות – הפקת הצעות נישואין מרגשות בכל הארץ. צילום ללא הגבלה, סרטון כניסה, שיר אישי ושמפניה בכל הפקה. בים, בטבע, במסעדה, בטיסה או ביאכטה.">
+<meta property="og:title" content="רינג הפקות – הצעות נישואין מרגשות">
+<meta property="og:description" content="כאן כדי ליצור עבורכם את הרגע המושלם. הפקת הצעות נישואין בכל הארץ.">
+<meta property="og:image" content="https://ringevents.co.il/wp-content/uploads/2024/11/IMG_5479-scaled-e1731613834929.jpg">
+<link rel="icon" type="image/png" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Assistant:wght@300;400;600;700&family=Pinyon+Script&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"רינג הפקות","alternateName":"Ring Events","description":"הפקת הצעות נישואין בכל הארץ","telephone":"+972-58-578-1866","email":"RingEvents.il@gmail.com","address":{"@type":"PostalAddress","addressLocality":"טבריה","addressCountry":"IL"},"areaServed":"IL","url":"https://ringevents.co.il/","sameAs":["https://www.facebook.com/RingEvents.il","https://www.instagram.com/ring_events_","https://www.youtube.com/channel/UC25QVVGlGbdLrEeHdpeA7HQ"]}
+</script>
+<style>
+:root{
+  /* כיוון: ערב שקיעה – רקע לילה עמוק, זהב שמפניה וורוד פרחים. פריסה: גושי מסך רחבים, טיפוגרפיה גדולה, גלריה פסיפסית */
+  --night:#15111c;
+  --night-2:#1e1828;
+  --ink:#f6efe6;
+  --muted:#b9adb8;
+  --gold:#d9b779;
+  --gold-lit:#d9b779;
+  --blush:#e7a6b1;
+  --line:rgba(217,183,121,.22);
+  --black:#15111c;
+  --cream:#f6efe6;
+  --display:"Bellefair","Frank Ruhl Libre",Georgia,serif;
+  --body:"Assistant","Heebo",Arial,sans-serif;
+  --script:"Pinyon Script",cursive;
+  color-scheme:dark;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{background:var(--night);color:var(--ink);font-family:var(--body);font-size:18px;line-height:1.7}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.15;text-wrap:balance}
+.wrap{width:min(1180px,100% - 40px);margin-inline:auto}
+.eyebrow{color:var(--gold);letter-spacing:.12em;font-size:.85rem;font-weight:600}
+.btn{display:inline-flex;align-items:center;gap:.5em;padding:.85em 1.6em;border-radius:999px;font-weight:700;text-decoration:none;border:1px solid var(--gold);transition:background .2s,color .2s;font-family:var(--body);font-size:1rem;cursor:pointer}
+.btn-gold{background:var(--gold);color:var(--night)}
+.btn-gold:hover{background:var(--ink);border-color:var(--ink)}
+.btn-ghost{background:transparent;color:var(--ink)}
+.btn-ghost:hover{background:rgba(156,122,69,.12)}
+
+/* photo frame with graceful fallback */
+.ph{position:relative;overflow:hidden;background:
+  radial-gradient(120% 90% at 20% 10%,rgba(231,166,177,.45),transparent 60%),
+  radial-gradient(90% 80% at 85% 90%,rgba(217,183,121,.4),transparent 60%),
+  linear-gradient(160deg,#2a2033,#17121f)}
+.ph img{width:100%;height:100%;object-fit:cover}
+
+/* header */
+header{position:sticky;top:0;z-index:20;background:rgba(21,17,28,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px 0}
+.logo{display:flex;align-items:center;text-decoration:none}
+.logo img{height:58px;width:auto}
+.nav ul{display:flex;gap:26px;list-style:none}
+.nav ul a{text-decoration:none;color:var(--muted);font-weight:600}
+.nav ul a:hover{color:var(--ink)}
+@media (max-width:880px){.nav ul{display:none}}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;padding:72px 0 64px}
+.hero h1{font-size:clamp(2.6rem,5.6vw,4.6rem)}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero p.lead{color:var(--muted);font-size:1.2rem;max-width:34ch;margin:22px 0 30px}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:14px}
+.hero .ph{aspect-ratio:4/5;border-radius:220px 220px 18px 18px;border:1px solid var(--line)}
+.hero .stamp{position:absolute;bottom:22px;inset-inline-start:22px;background:rgba(21,17,28,.8);border:1px solid var(--line);border-radius:14px;padding:12px 18px}
+.hero .stamp span{font-family:var(--script);font-size:2rem;color:var(--gold-lit);line-height:1}
+.hero .stamp small{display:block;color:#d8cdbf;font-size:.85rem}
+@media (max-width:880px){.hero{grid-template-columns:1fr;padding-top:40px}.hero .ph{order:-1;aspect-ratio:1/1;border-radius:160px 160px 18px 18px}}
+
+/* facts strip */
+.facts{border-block:1px solid var(--line);background:var(--night-2)}
+.facts ul{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding:26px 0;text-align:center}
+.facts strong{display:block;font-family:var(--display);font-size:1.5rem;color:var(--gold);font-weight:400}
+.facts span{color:var(--muted);font-size:.95rem}
+@media (max-width:700px){.facts ul{grid-template-columns:repeat(2,1fr)}}
+
+section{padding:96px 0}
+.head{display:flex;flex-direction:column;gap:10px;margin-bottom:48px;max-width:640px}
+.head h2{font-size:clamp(2rem,4vw,3rem)}
+.head p{color:var(--muted)}
+
+/* included */
+.incl{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--line)}
+.incl div{padding:30px 24px 10px;border-inline-start:1px solid var(--line)}
+.incl div:first-child{border-inline-start:0;padding-inline-start:0}
+.incl .n{font-family:var(--display);color:var(--blush);font-size:1rem}
+.incl h3{font-size:1.5rem;margin:8px 0}
+.incl p{color:var(--muted);font-size:1rem}
+@media (max-width:880px){.incl{grid-template-columns:1fr 1fr}.incl div{border-inline-start:0;border-bottom:1px solid var(--line);padding-inline:0 16px}}
+@media (max-width:480px){.incl{grid-template-columns:1fr}}
+
+/* styles */
+.styles{background:var(--night-2)}
+.dark{background:var(--night)}
+.style-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.style-card{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--night)}
+.style-card .ph{aspect-ratio:3/4}
+.style-card h3{font-size:1.2rem;padding:14px 16px}
+@media (max-width:980px){.style-grid{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:560px){.style-grid{grid-template-columns:repeat(2,1fr)}}
+
+/* where */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.places{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.places li{list-style:none;border:1px solid var(--line);border-radius:14px;padding:18px 20px;display:flex;justify-content:space-between;align-items:center}
+.places li b{font-family:var(--display);font-weight:400;font-size:1.35rem}
+.places li small{color:var(--muted)}
+.modes{display:flex;flex-direction:column;gap:18px}
+.mode{padding:24px;border-radius:16px;background:var(--night-2);border-inline-start:3px solid var(--blush)}
+.mode h3{font-size:1.5rem;margin-bottom:6px}
+.mode p{color:var(--muted)}
+@media (max-width:880px){.split{grid-template-columns:1fr}}
+
+/* upgrades */
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chips span{border:1px solid var(--line);border-radius:999px;padding:.5em 1.1em;color:var(--ink);font-size:1rem}
+.chips span.marry{font-family:var(--script);color:var(--gold);font-size:1.3rem;padding:.25em 1.1em}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;counter-reset:s}
+.steps li{list-style:none;counter-increment:s}
+.steps li::before{content:counter(s);display:grid;place-items:center;width:52px;height:52px;border-radius:50%;border:1px solid var(--gold);color:var(--gold);font-family:var(--display);font-size:1.4rem;margin-bottom:16px}
+.steps h3{font-size:1.35rem;margin-bottom:6px}
+.steps p{color:var(--muted);font-size:1rem}
+@media (max-width:880px){.steps{grid-template-columns:1fr 1fr}}
+@media (max-width:480px){.steps{grid-template-columns:1fr}}
+
+/* couples mosaic */
+.mosaic{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:220px;gap:12px}
+.mosaic .ph{border-radius:14px}
+.mosaic .tall{grid-row:span 2}
+.mosaic .wide{grid-column:span 2}
+@media (max-width:760px){.mosaic{grid-template-columns:1fr 1fr;grid-auto-rows:170px}}
+.more{margin-top:28px;display:flex;gap:14px;flex-wrap:wrap}
+
+/* videos */
+.vids{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.vid{position:relative;aspect-ratio:16/9;border-radius:14px;overflow:hidden;border:1px solid var(--line)}
+.vid button{all:unset;cursor:pointer;position:absolute;inset:0;display:grid;place-items:center}
+.vid button:focus-visible{outline:2px solid var(--gold);outline-offset:-4px}
+.vid img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.vid .play{position:relative;width:64px;height:64px;border-radius:50%;background:rgba(22,22,26,.75);border:1px solid #c9a46a;display:grid;place-items:center;transition:transform .2s}
+.vid button:hover .play{transform:scale(1.08)}
+.vid .play::before{content:"";border-style:solid;border-width:11px 0 11px 18px;border-color:transparent transparent transparent #f5ece3;margin-inline-end:-4px}
+.vid iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.vid .yt{position:absolute;bottom:10px;inset-inline-end:12px;font-size:.8rem;color:#f5ece3;background:rgba(22,22,26,.7);padding:2px 10px;border-radius:999px;text-decoration:none}
+.vids .extra{display:none}
+.vids.open .extra{display:block}
+@media (max-width:880px){.vids{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.vids{grid-template-columns:1fr}}
+
+/* contact */
+.contact{background:linear-gradient(180deg,var(--night-2),var(--night))}
+.contact .split{align-items:stretch}
+.lines{display:flex;flex-direction:column;gap:14px;margin-top:26px}
+.lines a,.lines div{display:flex;justify-content:space-between;gap:16px;padding:16px 0;border-bottom:1px solid var(--line);text-decoration:none}
+.lines small{color:var(--muted)}
+.lines b{font-weight:600;direction:ltr;unicode-bidi:isolate}
+form{background:var(--night);border:1px solid var(--line);border-radius:20px;padding:30px;display:flex;flex-direction:column;gap:16px}
+form h3{font-size:1.7rem}
+label{display:flex;flex-direction:column;gap:6px;font-weight:600;font-size:.95rem}
+input,select,textarea{font:inherit;font-weight:400;background:var(--night-2);color:var(--ink);border:1px solid var(--line);border-radius:10px;padding:.7em .9em}
+textarea{min-height:90px;resize:vertical}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media (max-width:480px){.row2{grid-template-columns:1fr}}
+.form-out{display:none;border:1px solid var(--gold);border-radius:12px;padding:16px;background:rgba(201,164,106,.1)}
+.form-out.show{display:block}
+.form-out p{margin-bottom:10px}
+
+footer{background:var(--night);border-top:1px solid var(--line);padding:48px 0 100px;color:#b3a99c;font-size:.95rem}
+.foot img{height:96px;width:auto;margin-bottom:12px}
+.foot a:hover{color:#f5ece3!important}
+.foot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px}
+.foot nav{display:flex;gap:18px;flex-wrap:wrap}
+.foot a{text-decoration:none}
+.foot a:hover{color:var(--ink)}
+
+.wa{position:fixed;bottom:20px;inset-inline-start:20px;z-index:30;width:60px;height:60px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.35)}
+.wa svg{width:32px;height:32px;fill:#fff}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top" aria-label="רינג הפקות – דף הבית"><img src="logo-light.png" alt="Ring Events – רינג הפקות" width="66" height="58"></a>
+    <ul>
+      <li><a href="#included">מה כלול</a></li>
+      <li><a href="#styles">סגנונות</a></li>
+      <li><a href="#where">איפה</a></li>
+      <li><a href="#process">איך זה עובד</a></li>
+      <li><a href="#couples">הזוגות שלנו</a></li>
+      <li><a href="#videos">וידאו</a></li>
+    </ul>
+    <a class="btn btn-gold" href="tel:0585781866">058-578-1866</a>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap hero">
+    <div>
+      <p class="eyebrow">הפקת הצעות נישואין · בכל הארץ</p>
+      <h1>כאן כדי ליצור עבורכם את <em>הרגע המושלם</em></h1>
+      <p class="lead">אתם מביאים את הטבעת. אנחנו דואגים לכל השאר: עיצוב, צילום, מוזיקה ושמפניה, בדיוק ברגע שהיא אומרת כן.</p>
+      <div class="ctas">
+        <a class="btn btn-gold" href="https://wa.me/972585781866?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%A4%D7%A8%D7%98%D7%99%D7%9D%20%D7%A2%D7%9C%20%D7%94%D7%A4%D7%A7%D7%AA%20%D7%94%D7%A6%D7%A2%D7%AA%20%D7%A0%D7%99%D7%A9%D7%95%D7%90%D7%99%D7%9F">דברו איתנו בוואטסאפ</a>
+        <a class="btn btn-ghost" href="#styles">לראות סגנונות</a>
+      </div>
+    </div>
+    <div class="ph">
+      <img src="https://ringevents.co.il/wp-content/uploads/2024/11/IMG_5479-scaled-e1731613834929-1024x709.jpg" alt="הצעת נישואין בהפקת רינג הפקות" onerror="this.remove()">
+      <div class="stamp"><span>Marry Me?</span><small>הרגע שתזכרו כל החיים</small></div>
+    </div>
+  </div>
+
+  <div class="facts">
+    <ul class="wrap">
+      <li><strong>בכל הארץ</strong><span>מהצפון ועד הדרום, מבסיס בטבריה</span></li>
+      <li><strong>ללא הגבלה</strong><span>תמונות מקצועיות מכל הרגע</span></li>
+      <li><strong>סרטון אישי</strong><span>מההליכה בשביל ועד הטבעת על האצבע</span></li>
+      <li><strong>בסוד מוחלט</strong><span>תיאום מלא כדי שהיא לא תחשוד</span></li>
+    </ul>
+  </div>
+
+  <section id="included">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">בכל הפקה</p>
+        <h2>מה מקבלים בכל הצעה</h2>
+        <p>ארבעה דברים שמגיעים עם כל הפקה, בכל סגנון ובכל מיקום.</p>
+      </div>
+      <div class="incl">
+        <div><span class="n">01</span><h3>צילום ללא הגבלה</h3><p>צלם מקצועי שתופס כל מבט, כל דמעה וכל חיבוק.</p></div>
+        <div><span class="n">02</span><h3>סרטון כניסה</h3><p>סרטון ערוך של כל הרגע, מהכניסה לשביל ועד שהטבעת עולה על האצבע.</p></div>
+        <div><span class="n">03</span><h3>שיר כניסה אישי</h3><p>השיר שלכם מתנגן בדיוק כשהיא מגיעה. לא בטוחים איזה? נעזור לבחור.</p></div>
+        <div><span class="n">04</span><h3>שמפניה וכוסות</h3><p>בקבוק שמפניה וכוסות מהודרות להרמת הכוסית הראשונה כמאורסים.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="styles" class="styles">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">סגנונות עיצוב</p>
+        <h2>בוחרים את האווירה</h2>
+        <p>מרומנטי וקלאסי ועד בוהו טבעי. כל סגנון אפשר להתאים לצבעים ולמקום שבחרתם.</p>
+      </div>
+      <div class="style-grid">
+        <div class="style-card"><div class="ph"><img loading="lazy" src="https://ringevents.co.il/wp-content/uploads/2023/12/IMG_5098-1-1-scaled.webp" alt="" onerror="this.remove()"></div><h3>פרחים ונרות</h3></div>
+        <div class="style-card"><div class="ph"><img loading="lazy" src="https://ringevents.co.il/wp-content/uploads/2023/03/IMG-9731-1-scaled.webp" alt="" onerror="this.remove()"></div><h3>כיתוב מואר</h3></div>
+        <div class="style-card"><div class="ph"><img loading="lazy" src="https://ringevents.co.il/wp-content/uploads/2023/03/IMG-5695-1-scaled-e1679916995330.webp" alt="" onerror="this.remove()"></div><h3>לב מפרחים</h3></div>
+        <div class="style-card"><div class="ph"><img loading="lazy" src="https://ringevents.co.il/wp-content/uploads/2023/03/IMG-2702-1-scaled-e1679917164130.webp" alt="" onerror="this.remove()"></div><h3>טבעת פרחים</h3></div>
+        <div class="style-card"><div class="ph"><img loading="lazy" src="https://ringevents.co.il/wp-content/uploads/2023/03/IMG-3067-1-scaled-e1679917332125.webp" alt="" onerror="this.remove()"></div><h3>אוהל טיפי בוהו</h3></div>
+        <div class="style-card"><div class="ph"><img loading="lazy" src="https://ringevents.co.il/wp-content/uploads/2023/03/IMG-5183-scaled.webp" alt="" onerror="this.remove()"></div><h3>אותיות MARRY ME</h3></div>
+        <div class="style-card"><div class="ph"><img loading="lazy" src="https://ringevents.co.il/wp-content/uploads/2023/03/IMG-5150-scaled.webp" alt="" onerror="this.remove()"></div><h3>מעגל בוהו</h3></div>
+        <div class="style-card"><div class="ph"><img loading="lazy" src="https://ringevents.co.il/wp-content/uploads/2023/03/IMG-8592-1-scaled.webp" alt="" onerror="this.remove()"></div><h3>חופת פרחים</h3></div>
+        <div class="style-card"><div class="ph"><img loading="lazy" src="https://ringevents.co.il/wp-content/uploads/2023/03/IMG-7977-1-scaled.webp" alt="" onerror="this.remove()"></div><h3>חופת במבוק</h3></div>
+        <div class="style-card"><div class="ph"><img loading="lazy" src="https://ringevents.co.il/wp-content/uploads/2023/03/IMG-2460-1-scaled.webp" alt="" onerror="this.remove()"></div><h3>מעגל פרחים</h3></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="where" class="dark">
+    <div class="wrap split">
+      <div>
+        <div class="head">
+          <p class="eyebrow">איפה ואיך</p>
+          <h2>בכל מקום שמתאים לסיפור שלכם</h2>
+        </div>
+        <ul class="places">
+          <li><b>על הים</b><small>שקיעה וחול</small></li>
+          <li><b>בטבע</b><small>נוף פתוח</small></li>
+          <li><b>במסעדה</b><small>ערב אינטימי</small></li>
+          <li><b>בטיסה</b><small>מעל העננים</small></li>
+          <li><b>ביאכטה</b><small>שייט פרטי</small></li>
+          <li><b>בטיול ג׳יפים</b><small>הרפתקה</small></li>
+        </ul>
+      </div>
+      <div class="modes">
+        <div class="mode"><h3>רק שניכם</h3><p>הפקה אינטימית ושקטה, שבה כל הרגע שייך לכם.</p></div>
+        <div class="mode"><h3>עם המשפחה והחברים</h3><p>כולם מחכים בסוד ומצטרפים לחגוג ברגע שהיא אומרת כן.</p></div>
+        <div class="mode"><h3>יוקרתי או פשוט</h3><p>מהפקה מלאה עם כל התוספות ועד עיצוב צנוע ומדויק. מתאימים לתקציב ולסגנון.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="styles" aria-labelledby="up-h">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">תוספות</p>
+        <h2 id="up-h">רוצים להגדיל את הרגע?</h2>
+        <p>אפשר להוסיף לכל הפקה:</p>
+      </div>
+      <div class="chips">
+        <span>זיקוקים</span>
+        <span>כוסות ממותגות</span>
+        <span>שולחן ממותג עם השמות שלכם</span>
+        <span>שביל בצבע לבחירתכם</span>
+        <span class="marry">Marry Me</span>
+        <span>אותיות בזהב או בלבן</span>
+        <span>שלט ממותג אישי</span>
+        <span>ועוד, לפי הרעיון שלכם</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="process">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">התהליך</p>
+        <h2>איך זה עובד</h2>
+      </div>
+      <ol class="steps">
+        <li><h3>שיחת היכרות</h3><p>מספרים לנו עליכם, על התאריך ועל החלום. בוואטסאפ או בטלפון.</p></li>
+        <li><h3>בוחרים סגנון ומקום</h3><p>מתאימים עיצוב, מיקום, שיר ותוספות.</p></li>
+        <li><h3>מתאמים בסוד</h3><p>אנחנו דואגים ללוגיסטיקה ולתזמון כדי שהיא לא תחשוד בכלום.</p></li>
+        <li><h3>היא אומרת כן</h3><p>אתם נהנים מהרגע. התמונות והסרטון נשארים לכם לתמיד.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="couples" class="styles">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">הזוגות שלנו</p>
+        <h2>רגעים שכבר הפקנו</h2>
+      </div>
+      <div class="mosaic">
+        <div class="ph tall"><img loading="lazy" src="https://ringevents.co.il/wp-content/uploads/2023/08/IMG-0756-1-1-scaled-e1693227679804.webp" alt="זוג מאורס בהפקת רינג הפקות" onerror="this.remove()"></div>
+        <div class="ph wide"><img loading="lazy" src="https://ringevents.co.il/wp-content/uploads/2023/03/IMG-7004-scaled.webp" alt="זוג מאורס בהפקת רינג הפקות" onerror="this.remove()"></div>
+        <div class="ph tall"><img loading="lazy" src="https://ringevents.co.il/wp-content/uploads/2023/03/IMG-5570-scaled.webp" alt="זוג מאורס בהפקת רינג הפקות" onerror="this.remove()"></div>
+        <div class="ph"><img loading="lazy" src="https://ringevents.co.il/wp-content/uploads/2023/03/IMG-5262-scaled.webp" alt="זוג מאורס בהפקת רינג הפקות" onerror="this.remove()"></div>
+        <div class="ph"><img loading="lazy" src="https://ringevents.co.il/wp-content/uploads/2023/03/IMG-6827-scaled.webp" alt="זוג מאורס בהפקת רינג הפקות" onerror="this.remove()"></div>
+        <div class="ph wide"><img loading="lazy" src="https://ringevents.co.il/wp-content/uploads/2023/03/IMG-3641-scaled.webp" alt="זוג מאורס בהפקת רינג הפקות" onerror="this.remove()"></div>
+        <div class="ph"><img loading="lazy" src="https://ringevents.co.il/wp-content/uploads/2023/12/IMG_7252-1-1-scaled-e1702417241486.webp" alt="זוג מאורס בהפקת רינג הפקות" onerror="this.remove()"></div>
+        <div class="ph"><img loading="lazy" src="https://ringevents.co.il/wp-content/uploads/2023/03/IMG-5685-scaled.webp" alt="זוג מאורס בהפקת רינג הפקות" onerror="this.remove()"></div>
+      </div>
+      <div class="more">
+        <a class="btn btn-ghost" href="https://www.instagram.com/ring_events_">עוד באינסטגרם</a>
+        <a class="btn btn-ghost" href="#videos">לסרטונים</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="videos" class="dark">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">וידאו</p>
+        <h2>לראות את הרגע קורה</h2>
+        <p>סרטונים מהפקות אמיתיות. ככה נראה הסרטון שתקבלו.</p>
+      </div>
+      <div class="vids" id="vids">
+        <div class="vid ph" data-id="vGQ1KDvf1dQ"><button type="button" aria-label="הפעלת סרטון 1"><img loading="lazy" src="https://i.ytimg.com/vi/vGQ1KDvf1dQ/hqdefault.jpg" alt="" onerror="this.remove()"><span class="play"></span></button><a class="yt" href="https://www.youtube.com/watch?v=vGQ1KDvf1dQ">YouTube</a></div>
+        <div class="vid ph" data-id="F56RIDGbgIA"><button type="button" aria-label="הפעלת סרטון 2"><img loading="lazy" src="https://i.ytimg.com/vi/F56RIDGbgIA/hqdefault.jpg" alt="" onerror="this.remove()"><span class="play"></span></button><a class="yt" href="https://www.youtube.com/watch?v=F56RIDGbgIA">YouTube</a></div>
+        <div class="vid ph" data-id="1l_d7asaIh8"><button type="button" aria-label="הפעלת סרטון 3"><img loading="lazy" src="https://i.ytimg.com/vi/1l_d7asaIh8/hqdefault.jpg" alt="" onerror="this.remove()"><span class="play"></span></button><a class="yt" href="https://www.youtube.com/watch?v=1l_d7asaIh8">YouTube</a></div>
+        <div class="vid ph" data-id="zM22wjaQnVQ"><button type="button" aria-label="הפעלת סרטון 4"><img loading="lazy" src="https://i.ytimg.com/vi/zM22wjaQnVQ/hqdefault.jpg" alt="" onerror="this.remove()"><span class="play"></span></button><a class="yt" href="https://www.youtube.com/watch?v=zM22wjaQnVQ">YouTube</a></div>
+        <div class="vid ph" data-id="ZSKGI_1Yay4"><button type="button" aria-label="הפעלת סרטון 5"><img loading="lazy" src="https://i.ytimg.com/vi/ZSKGI_1Yay4/hqdefault.jpg" alt="" onerror="this.remove()"><span class="play"></span></button><a class="yt" href="https://www.youtube.com/watch?v=ZSKGI_1Yay4">YouTube</a></div>
+        <div class="vid ph" data-id="TLwrfXuSb3s"><button type="button" aria-label="הפעלת סרטון 6"><img loading="lazy" src="https://i.ytimg.com/vi/TLwrfXuSb3s/hqdefault.jpg" alt="" onerror="this.remove()"><span class="play"></span></button><a class="yt" href="https://www.youtube.com/watch?v=TLwrfXuSb3s">YouTube</a></div>
+        <div class="vid ph extra" data-id="aYh2J6DqOaQ"><button type="button" aria-label="הפעלת סרטון 7"><img loading="lazy" src="https://i.ytimg.com/vi/aYh2J6DqOaQ/hqdefault.jpg" alt="" onerror="this.remove()"><span class="play"></span></button><a class="yt" href="https://www.youtube.com/watch?v=aYh2J6DqOaQ">YouTube</a></div>
+        <div class="vid ph extra" data-id="LQnoBkdrLg8"><button type="button" aria-label="הפעלת סרטון 8"><img loading="lazy" src="https://i.ytimg.com/vi/LQnoBkdrLg8/hqdefault.jpg" alt="" onerror="this.remove()"><span class="play"></span></button><a class="yt" href="https://www.youtube.com/watch?v=LQnoBkdrLg8">YouTube</a></div>
+        <div class="vid ph extra" data-id="geCTa-bcwvw"><button type="button" aria-label="הפעלת סרטון 9"><img loading="lazy" src="https://i.ytimg.com/vi/geCTa-bcwvw/hqdefault.jpg" alt="" onerror="this.remove()"><span class="play"></span></button><a class="yt" href="https://www.youtube.com/watch?v=geCTa-bcwvw">YouTube</a></div>
+        <div class="vid ph extra" data-id="2bkamy0UihM"><button type="button" aria-label="הפעלת סרטון 10"><img loading="lazy" src="https://i.ytimg.com/vi/2bkamy0UihM/hqdefault.jpg" alt="" onerror="this.remove()"><span class="play"></span></button><a class="yt" href="https://www.youtube.com/watch?v=2bkamy0UihM">YouTube</a></div>
+        <div class="vid ph extra" data-id="lufvTCd5T24"><button type="button" aria-label="הפעלת סרטון 11"><img loading="lazy" src="https://i.ytimg.com/vi/lufvTCd5T24/hqdefault.jpg" alt="" onerror="this.remove()"><span class="play"></span></button><a class="yt" href="https://www.youtube.com/watch?v=lufvTCd5T24">YouTube</a></div>
+        <div class="vid ph extra" data-id="1CT06oh-yHY"><button type="button" aria-label="הפעלת סרטון 12"><img loading="lazy" src="https://i.ytimg.com/vi/1CT06oh-yHY/hqdefault.jpg" alt="" onerror="this.remove()"><span class="play"></span></button><a class="yt" href="https://www.youtube.com/watch?v=1CT06oh-yHY">YouTube</a></div>
+      </div>
+      <div class="more"><button class="btn btn-gold" type="button" id="more-vids" aria-controls="vids" aria-expanded="false">עוד סרטונים</button><a class="btn btn-ghost" href="https://www.youtube.com/channel/UC25QVVGlGbdLrEeHdpeA7HQ">לערוץ היוטיוב</a></div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact dark">
+    <div class="wrap split">
+      <div>
+        <div class="head">
+          <p class="eyebrow">יש לכם טבעת?</p>
+          <h2>בואו נתכנן את ההצעה שלכם</h2>
+          <p>שלחו כמה פרטים ונחזור אליכם עם רעיונות שמתאימים לכם.</p>
+        </div>
+        <div class="lines">
+          <a href="tel:0585781866"><small>טלפון</small><b>058-578-1866</b></a>
+          <a href="tel:0747225752"><small>טלפון נוסף</small><b>074-722-5752</b></a>
+          <a href="mailto:RingEvents.il@gmail.com"><small>אימייל</small><b>RingEvents.il@gmail.com</b></a>
+          <div><small>אזור פעילות</small><b style="direction:rtl">בכל הארץ · טבריה</b></div>
+        </div>
+      </div>
+      <form id="lead" novalidate>
+        <h3>פרטים להצעה</h3>
+        <div class="row2">
+          <label for="f-name">שם<input id="f-name" name="name" required autocomplete="name"></label>
+          <label for="f-phone">טלפון<input id="f-phone" name="phone" type="tel" required autocomplete="tel" dir="ltr"></label>
+        </div>
+        <div class="row2">
+          <label for="f-date">תאריך משוער<input id="f-date" name="date" type="date"></label>
+          <label for="f-place">מיקום מועדף
+            <select id="f-place" name="place">
+              <option>עוד לא החלטתי</option><option>על הים</option><option>בטבע</option><option>במסעדה</option><option>בטיסה</option><option>ביאכטה</option><option>בטיול ג׳יפים</option>
+            </select>
+          </label>
+        </div>
+        <label for="f-msg">ספרו לנו קצת<textarea id="f-msg" name="msg" placeholder="למשל: היא אוהבת פרחים לבנים ושקיעות"></textarea></label>
+        <button class="btn btn-gold" type="submit">המשך לשליחה בוואטסאפ</button>
+        <div class="form-out" id="out" role="status">
+          <p>ההודעה מוכנה. לחצו כדי לפתוח אותה בוואטסאפ ולשלוח:</p>
+          <a class="btn btn-gold" id="wa-link" href="https://wa.me/972585781866">פתיחה בוואטסאפ</a>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div><img src="logo-light.png" alt="Ring Events" width="109" height="96"><div>© רינג הפקות · הפקת הצעות נישואין</div></div>
+    <nav aria-label="קישורים">
+      <a href="https://www.facebook.com/RingEvents.il">פייסבוק</a>
+      <a href="https://www.instagram.com/ring_events_">אינסטגרם</a>
+      <a href="https://www.youtube.com/channel/UC25QVVGlGbdLrEeHdpeA7HQ">יוטיוב</a>
+      <a href="#">מדיניות פרטיות</a>
+      <a href="#">הצהרת נגישות</a>
+    </nav>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/972585781866" aria-label="שליחת הודעה בוואטסאפ">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.3-.4.8-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg>
+</a>
+
+<script>
+document.querySelectorAll('.vid button').forEach(function(b){
+  b.addEventListener('click',function(){
+    var box=b.parentNode,id=box.dataset.id,f=document.createElement('iframe');
+    f.src='https://www.youtube-nocookie.com/embed/'+id+'?autoplay=1&rel=0';
+    f.title='סרטון הצעת נישואין';f.allow='autoplay; encrypted-media; picture-in-picture';f.allowFullscreen=true;
+    box.replaceChild(f,b);
+  });
+});
+document.getElementById('more-vids').addEventListener('click',function(){
+  var g=document.getElementById('vids'),o=g.classList.toggle('open');
+  this.setAttribute('aria-expanded',o);this.textContent=o?'פחות סרטונים':'עוד סרטונים';
+});
+document.getElementById('lead').addEventListener('submit', function(e){
+  e.preventDefault();
+  var f = e.target;
+  var name = f.name.value.trim(), phone = f.phone.value.trim();
+  if(!name || !phone){ (name ? f.phone : f.name).focus(); return; }
+  var t = 'היי, אני ' + name + ' (' + phone + '). אשמח לפרטים על הפקת הצעת נישואין.';
+  if(f.date.value) t += '\nתאריך משוער: ' + f.date.value;
+  t += '\nמיקום: ' + f.place.value;
+  if(f.msg.value.trim()) t += '\n' + f.msg.value.trim();
+  document.getElementById('wa-link').href = 'https://wa.me/972585781866?text=' + encodeURIComponent(t);
+  document.getElementById('out').classList.add('show');
+});
+</script>
+</body>
+</html>
